@@ -440,17 +440,15 @@ function initContactForm() {
 }
 
 
-// ==================== 10. STACKING CARDS INITIALIZER (DYNAMIC STAGGERED STICKY TABS) ====================
+// ==================== 10. STACKING CARDS INITIALIZER (ZERO-GAP DIRECT OVERLAP) ====================
 function initCardStackScroll() {
   const cards = Array.from(document.querySelectorAll('.project-card')).filter(c => c.style.display !== 'none');
   if (!cards.length) return;
 
-  const isMobile = window.innerWidth < 768;
-  const baseTop = isMobile ? 76 : 96;
-  const step = isMobile ? 14 : 18;
+  const topOffset = window.innerWidth < 768 ? '85px' : '100px';
 
   cards.forEach((card, index) => {
-    card.style.top = `${baseTop + index * step}px`;
+    card.style.top = topOffset;
     card.style.zIndex = `${10 + index * 10}`;
   });
 }
