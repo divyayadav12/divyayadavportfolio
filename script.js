@@ -440,55 +440,15 @@ function initContactForm() {
 }
 
 
-// ==================== 10. GSAP PINNED STACKING CARDS (EXACT SHERYIANS MECHANISM) ====================
+// ==================== 10. STACKING CARDS INITIALIZER (PURE CSS STICKY + DYNAMIC Z-INDEX) ====================
 function initCardStackScroll() {
-  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Clear previous triggers if re-initialized (e.g. after filtering)
-  ScrollTrigger.getAll().forEach(t => t.kill());
-
   const cards = Array.from(document.querySelectorAll('.project-card')).filter(c => c.style.display !== 'none');
   if (!cards.length) return;
 
-  const headerOffset = window.innerWidth < 640 ? 85 : 100;
-
   cards.forEach((card, index) => {
     // Stacking index: subsequent cards always sit on top
-    card.style.zIndex = 10 + index * 10;
-
-    // Pin every card except the last card
-    if (index < cards.length - 1) {
-      ScrollTrigger.create({
-        trigger: card,
-        start: `top top+=${headerOffset}`,
-        endTrigger: '#projects-grid',
-        end: 'bottom bottom',
-        pin: true,
-        pinSpacing: false,
-        invalidateOnRefresh: true,
-      });
-
-      // Scale down card slightly and dim as the next card scrolls over it
-      const nextCard = cards[index + 1];
-      if (nextCard) {
-        gsap.to(card, {
-          scale: 0.94,
-          filter: 'brightness(0.72)',
-          ease: 'power1.out',
-          scrollTrigger: {
-            trigger: nextCard,
-            start: `top top+=${headerOffset + 300}`,
-            end: `top top+=${headerOffset}`,
-            scrub: true,
-          }
-        });
-      }
-    }
+    card.style.zIndex = `${10 + index * 10}`;
   });
-
-  ScrollTrigger.refresh();
 }
 
 
