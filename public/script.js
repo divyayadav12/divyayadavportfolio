@@ -1,5 +1,89 @@
-// ==================== PROJECT DATA ARRAY (WITH LIVE VERCEL DEPLOYMENTS) ====================
+// ==================== PROJECT DATA ARRAY (ORDERED: LIVE DEPLOYMENTS FIRST) ====================
 const projectsData = [
+  {
+    id: "marketing-platform",
+    title: "AI Creator Marketplace & Marketing Platform",
+    badge: "🟢 Live Production Platform",
+    subtitle: "Influencer Discovery, Campaign Analytics & Escrow Infrastructure",
+    role: "Full Stack Web Developer",
+    period: "Live Production App",
+    liveUrl: "https://marketing-sandy-pi.vercel.app/",
+    tech: ["Next.js 15", "React.js", "TypeScript", "Tailwind CSS", "PGVector AI", "Vercel"],
+    impact: "Live operating system for influencer marketing with AI creator matchmaking, verified social analytics, and cryptographic escrow payments.",
+    description: "An advanced influencer marketing engine designed to connect global brands with high-impact content creators. Features 1536-dimensional vector embedding AI creator discovery, verified real-time YouTube/Instagram engagement metrics, and milestone-based escrow billing.",
+    features: [
+      "Mathematical AI Creator Discovery powered by PGVector cosine similarity matching",
+      "Cryptographically secured payment escrow with milestone-based payout release",
+      "Real-time social analytics ingestion from YouTube and Instagram APIs",
+      "Modern dark/light mode UI with interactive 3D spatial analytics cards",
+      "Comprehensive creator profiles, media kits, authenticity scoring, and audience demographics",
+      "Production deployment on Vercel with server-side rendering and edge optimization"
+    ],
+    architecture: "Engineered with Next.js App Router, React Server Components, TypeScript, Tailwind CSS, and vector similarity matchmaking algorithms."
+  },
+  {
+    id: "wedding-films",
+    title: "Luxury Wedding Films & Photography Website",
+    badge: "🟢 Live Client Website",
+    subtitle: "Cinematic Videography, Booking System & Visual Storytelling",
+    role: "Frontend & Web Developer",
+    period: "Live Client Website",
+    liveUrl: "https://websidewedding-nine.vercel.app/",
+    tech: ["Next.js", "React.js", "Tailwind CSS", "Lucide Icons", "Vercel"],
+    impact: "Live luxury wedding photography and cinematic videography studio portal featuring immersive media showcases and client booking pipelines.",
+    description: "A high-end, responsive wedding cinematography and photography platform engineered for visual elegance. Showcases curated couple film reels, responsive image galleries, client testimonial sliders, inquiry booking workflows, and WhatsApp integration.",
+    features: [
+      "Cinematic hero layout with high-resolution image preload and smooth typography",
+      "Interactive video & photography portfolio galleries with hover reveal transitions",
+      "Custom multi-step client booking inquiry and service package breakdown",
+      "Direct WhatsApp and call integration for instantaneous client reservations",
+      "Optimized Next.js image pipeline with lazy loading and instant page loads",
+      "Tailored luxury warm aesthetics with custom typography and mobile navigation"
+    ],
+    architecture: "Built with Next.js and Tailwind CSS, featuring optimized asset delivery and deployed globally on Vercel CDN."
+  },
+  {
+    id: "bhumicred-portal",
+    title: "Bhumi Cred — Real Estate & Credit Web Platform",
+    badge: "🟢 Live Fintech Portal",
+    subtitle: "Property Credit Evaluation, Land Loans & Verification Workflows",
+    role: "Full Stack Developer",
+    period: "Live Fintech App",
+    liveUrl: "https://bhumicredweb-qbama8yrk-divyayadav12s-projects.vercel.app/",
+    tech: ["React.js", "TypeScript", "Node.js", "Tailwind CSS", "Vercel"],
+    impact: "Streamlines property credit assessments, land loan eligibility checks, and secure document verification workflows.",
+    description: "A specialized fintech portal created for land credit scoring and property financing. Facilitates user credit profile checks, loan calculation estimators, property document upload and verification, and role-based portal access.",
+    features: [
+      "Interactive Credit Score & Loan Eligibility Assessment calculator",
+      "Property document verification and intake management system",
+      "Secure user authentication, session persistence, and profile management",
+      "Intuitive dashboard with loan status tracking and visual milestone indicators",
+      "Responsive financial data tables with dynamic filtering and sorting",
+      "Clean fintech design system engineered with React and Tailwind CSS"
+    ],
+    architecture: "React SPA with component-driven state architecture, TypeScript type safety, and responsive CSS grid system deployed on Vercel."
+  },
+  {
+    id: "ca-final-reality",
+    title: "CA Final Prep & Reality Check Dashboard",
+    badge: "🟢 Live EdTech Preparation Platform",
+    subtitle: "Interactive Exam Readiness, Syllabus Tracker & Study Analytics",
+    role: "Frontend & Full Stack Developer",
+    period: "Live Student Web App",
+    liveUrl: "https://ca-final-web.vercel.app/",
+    tech: ["React.js", "Vite", "Tailwind CSS", "LocalStorage State", "Vercel"],
+    impact: "Empowers Chartered Accountancy candidates with structured revision tracking, exam countdowns, and realistic mock scoring.",
+    description: "A dedicated exam preparation and syllabus milestone tracking platform for CA Final candidates. Provides topic-wise completion meters, daily target timers, revision cycle calculators, and visual performance graphs.",
+    features: [
+      "Subject-wise and group-wise CA Final syllabus completion tracker",
+      "Live exam countdown target timer with daily hour study tracking",
+      "Realistic mock test score input and percentile progress visualizer",
+      "Local storage synchronization for private, instant client-side data persistence",
+      "Distraction-free dark mode interface engineered for long study sessions",
+      "Ultra-fast loading compiled with Vite and deployed on Vercel"
+    ],
+    architecture: "Modern React.js application compiled with Vite, styled with Tailwind CSS, utilizing custom hooks for state persistence."
+  },
   {
     id: "fast-hrm",
     title: "FAST HRM — Employee & Work Management System",
@@ -21,90 +105,6 @@ const projectsData = [
       "Configured for production deployment with Nginx reverse proxy"
     ],
     architecture: "Frontend built with React.js & TypeScript consuming REST APIs. Backend powered by Node.js/Express with MongoDB data persistence, JWT validation, and RBAC middleware."
-  },
-  {
-    id: "marketing-platform",
-    title: "AI Creator Marketplace & Marketing Platform",
-    badge: "⭐ Live Next.js Production Platform",
-    subtitle: "Influencer Discovery, Campaign Analytics & Escrow Infrastructure",
-    role: "Full Stack Web Developer",
-    period: "Live Production App",
-    liveUrl: "https://marketing-sandy-pi.vercel.app/",
-    tech: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "PGVector AI", "Vercel"],
-    impact: "Live operating system for influencer marketing with AI creator matchmaking, verified social analytics, and cryptographic escrow payments.",
-    description: "An advanced influencer marketing engine designed to connect global brands with high-impact content creators. Features 1536-dimensional vector embedding AI creator discovery, verified real-time YouTube/Instagram engagement metrics, and milestone-based escrow billing.",
-    features: [
-      "Mathematical AI Creator Discovery powered by PGVector cosine similarity matching",
-      "Cryptographically secured payment escrow with milestone-based payout release",
-      "Real-time social analytics ingestion from YouTube and Instagram APIs",
-      "Modern dark/light mode UI with interactive 3D spatial analytics cards",
-      "Comprehensive creator profiles, media kits, authenticity scoring, and audience demographics",
-      "Production deployment on Vercel with server-side rendering and edge optimization"
-    ],
-    architecture: "Engineered with Next.js App Router, React Server Components, TypeScript, Tailwind CSS, and vector similarity matchmaking algorithms."
-  },
-  {
-    id: "wedding-films",
-    title: "Luxury Wedding Films & Photography Website",
-    badge: "⭐ Live Next.js Portfolio Experience",
-    subtitle: "Cinematic Videography, Booking System & Visual Storytelling",
-    role: "Frontend & Web Developer",
-    period: "Live Client Website",
-    liveUrl: "https://websidewedding-nine.vercel.app/",
-    tech: ["Next.js", "React.js", "Tailwind CSS", "Lucide Icons", "Vercel"],
-    impact: "Live luxury wedding photography and cinematic videography studio portal featuring immersive media showcases and client booking pipelines.",
-    description: "A high-end, responsive wedding cinematography and photography platform engineered for visual elegance. Showcases curated couple film reels, responsive image galleries, client testimonial sliders, inquiry booking workflows, and WhatsApp integration.",
-    features: [
-      "Cinematic hero layout with high-resolution image preload and smooth typography",
-      "Interactive video & photography portfolio galleries with hover reveal transitions",
-      "Custom multi-step client booking inquiry and service package breakdown",
-      "Direct WhatsApp and call integration for instantaneous client reservations",
-      "Optimized Next.js image pipeline with lazy loading and instant page loads",
-      "Tailored luxury warm aesthetics with custom typography and mobile navigation"
-    ],
-    architecture: "Built with Next.js and Tailwind CSS, featuring optimized asset delivery and deployed globally on Vercel CDN."
-  },
-  {
-    id: "bhumicred-portal",
-    title: "Bhumi Cred — Real Estate & Credit Web Platform",
-    badge: "⭐ Live Fintech & Real Estate Portal",
-    subtitle: "Property Credit Evaluation, Land Loans & Verification Workflows",
-    role: "Full Stack Developer",
-    period: "Live Fintech App",
-    liveUrl: "https://bhumicredweb-qbama8yrk-divyayadav12s-projects.vercel.app/",
-    tech: ["React.js", "TypeScript", "Node.js", "Tailwind CSS", "Vercel"],
-    impact: "Streamlines property credit assessments, land loan eligibility checks, and secure document verification workflows.",
-    description: "A specialized fintech portal created for land credit scoring and property financing. Facilitates user credit profile checks, loan calculation estimators, property document upload and verification, and role-based portal access.",
-    features: [
-      "Interactive Credit Score & Loan Eligibility Assessment calculator",
-      "Property document verification and intake management system",
-      "Secure user authentication, session persistence, and profile management",
-      "Intuitive dashboard with loan status tracking and visual milestone indicators",
-      "Responsive financial data tables with dynamic filtering and sorting",
-      "Clean fintech design system engineered with React and Tailwind CSS"
-    ],
-    architecture: "React SPA with component-driven state architecture, TypeScript type safety, and responsive CSS grid system deployed on Vercel."
-  },
-  {
-    id: "ca-final-reality",
-    title: "CA Final Prep & Reality Check Dashboard",
-    badge: "⭐ Live EdTech Preparation Platform",
-    subtitle: "Interactive Exam Readiness, Syllabus Tracker & Study Analytics",
-    role: "Frontend & Full Stack Developer",
-    period: "Live Student Web App",
-    liveUrl: "https://ca-final-web.vercel.app/",
-    tech: ["React.js", "Vite", "Tailwind CSS", "LocalStorage State", "Vercel"],
-    impact: "Empowers Chartered Accountancy candidates with structured revision tracking, exam countdowns, and realistic mock scoring.",
-    description: "A dedicated exam preparation and syllabus milestone tracking platform for CA Final candidates. Provides topic-wise completion meters, daily target timers, revision cycle calculators, and visual performance graphs.",
-    features: [
-      "Subject-wise and group-wise CA Final syllabus completion tracker",
-      "Live exam countdown target timer with daily hour study tracking",
-      "Realistic mock test score input and percentile progress visualizer",
-      "Local storage synchronization for private, instant client-side data persistence",
-      "Distraction-free dark mode interface engineered for long study sessions",
-      "Ultra-fast loading compiled with Vite and deployed on Vercel"
-    ],
-    architecture: "Modern React.js application compiled with Vite, styled with Tailwind CSS, utilizing custom hooks for state persistence."
   },
   {
     id: "fast-career",
@@ -196,31 +196,14 @@ document.addEventListener('DOMContentLoaded', () => {
     window.lucide.createIcons();
   }
 
-  // 1. Initialize 3D Rotating & Scroll-interactive Image
   init3DAvatar();
-
-  // 2. Initialize Scroll-triggered Animations (Intersection Observer)
   initScrollAnimations();
-
-  // 3. Initialize Interactive Spotlight Cursor
   initSpotlight();
-
-  // 4. Mobile Menu Drawer
   initMobileMenu();
-
-  // 5. Project Filtering
   initProjectFiltering();
-
-  // 6. Project Modal Details
   initProjectModal();
-
-  // 7. Copy Buttons
   initCopyButtons();
-
-  // 8. Contact Form
   initContactForm();
-
-  // 9. Header Scroll Effect
   initNavbarScroll();
 });
 
@@ -238,16 +221,14 @@ function init3DAvatar() {
   let lastScrollY = window.scrollY;
   let isHovered = false;
 
-  // Mouse Interaction: 3D Tilt on Hover
   wrapper.addEventListener('mousemove', (e) => {
     isHovered = true;
     const rect = wrapper.getBoundingClientRect();
     const x = e.clientX - rect.left - rect.width / 2;
     const y = e.clientY - rect.top - rect.height / 2;
     
-    // Calculate tilt angles
-    mouseTiltY = (x / (rect.width / 2)) * 25; // max 25 deg
-    mouseTiltX = -(y / (rect.height / 2)) * 20; // max 20 deg
+    mouseTiltY = (x / (rect.width / 2)) * 25;
+    mouseTiltX = -(y / (rect.height / 2)) * 20;
   });
 
   wrapper.addEventListener('mouseleave', () => {
@@ -256,27 +237,20 @@ function init3DAvatar() {
     mouseTiltY = 0;
   });
 
-  // Scroll Interaction: Spin dynamically on scroll
   window.addEventListener('scroll', () => {
     const currentScrollY = window.scrollY;
     const scrollDelta = currentScrollY - lastScrollY;
-    baseRotation += scrollDelta * 0.45; // rotate proportionally to scroll
+    baseRotation += scrollDelta * 0.45;
     lastScrollY = currentScrollY;
   }, { passive: true });
 
-  // Continuous Subtle Rotation Animation Loop (60 FPS)
   function render3DLoop() {
-    // If not hovering, continuously spin slowly
     if (!isHovered) {
-      baseRotation += 0.35; // continuous elegant round-round rotation
+      baseRotation += 0.35;
     }
 
-    // Smooth interpolation towards current angle
     targetRotation += (baseRotation + mouseTiltY - targetRotation) * 0.08;
-
-    // Apply 3D Matrix
     card.style.transform = `rotateX(${mouseTiltX}deg) rotateY(${targetRotation}deg) translateZ(10px)`;
-
     requestAnimationFrame(render3DLoop);
   }
 
@@ -291,16 +265,15 @@ function initScrollAnimations() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, idx) => {
       if (entry.isIntersecting) {
-        // Stagger entrance delay
         setTimeout(() => {
           entry.target.classList.add('is-revealed');
-        }, (idx % 3) * 100);
+        }, (idx % 3) * 80);
         observer.unobserve(entry.target);
       }
     });
   }, {
     root: null,
-    threshold: 0.12,
+    threshold: 0.1,
     rootMargin: '0px 0px -40px 0px'
   });
 
@@ -380,7 +353,7 @@ function initProjectFiltering() {
       projectCards.forEach((card, index) => {
         const category = card.getAttribute('data-category') || '';
         if (filter === 'all' || category.includes(filter)) {
-          card.style.display = 'flex';
+          card.style.display = 'grid';
           setTimeout(() => {
             card.classList.add('is-revealed');
           }, index * 40);
