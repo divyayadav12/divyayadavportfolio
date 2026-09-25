@@ -205,6 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCopyButtons();
   initContactForm();
   initNavbarScroll();
+  initCardStackScroll();
 });
 
 
@@ -522,6 +523,44 @@ function initContactForm() {
     showToast('Opening your email client to send message...');
     form.reset();
   });
+}
+
+
+// ==================== 10. EXACT SHERYIANS STICKY CARD STACK ON SCROLL ====================
+function initCardStackScroll() {
+  const cards = document.querySelectorAll('.project-card');
+  if (!cards.length) return;
+
+  function handleStackScroll() {
+    const headerOffset = window.innerWidth < 640 ? 85 : 100;
+
+    cards.forEach((card, i) => {
+      const nextCard = cards[i + 1];
+
+      if (nextCard && nextCard.style.display !== 'none') {
+        const nextRect = nextCard.getBoundingClientRect();
+        const diff = (headerOffset + card.offsetHeight) - nextRect.top;
+        const progress = Math.min(1, Math.max(0, diff / card.offsetHeight));
+
+        if (progress > 0) {
+          const scale = (1 - progress * 0.05).toFixed(3);
+          const brightness = (1 - progress * 0.25).toFixed(3);
+          card.style.transform = `scale(${scale})`;
+          card.style.filter = `brightness(${brightness})`;
+        } else {
+          card.style.transform = 'scale(1)';
+          card.style.filter = 'brightness(1)';
+        }
+      } else {
+        card.style.transform = 'scale(1)';
+        card.style.filter = 'brightness(1)';
+      }
+    });
+  }
+
+  window.addEventListener('scroll', handleStackScroll, { passive: true });
+  window.addEventListener('resize', handleStackScroll, { passive: true });
+  handleStackScroll();
 }
 
 
