@@ -1,10 +1,15 @@
-/* Custom Styling for Divya Yadav Portfolio (Matching Reference Aesthetic) */
+/* Custom Styling for Divya Yadav Portfolio (Pure Obsidian Black Theme) */
 
 /* Base Customizations */
 html {
   scroll-behavior: smooth;
-  background-color: #0c0e12;
+  background-color: #000000;
   font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: #000000;
+  overflow-x: clip;
 }
 
 ::selection {
@@ -18,16 +23,16 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0c0e12;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #232734;
+  background: #222222;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3e445b;
+  background: #383838;
 }
 
 /* ==================== 3D PERSPECTIVE & CONTINUOUS ROTATION ==================== */
@@ -75,24 +80,6 @@ html {
   border-radius: 28px !important;
 }
 
-@keyframes orbitRotate {
-  0% {
-    transform: rotateX(65deg) rotateY(15deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(65deg) rotateY(15deg) rotateZ(360deg);
-  }
-}
-
-@keyframes orbitRotateReverse {
-  0% {
-    transform: rotateX(55deg) rotateY(-25deg) rotateZ(360deg);
-  }
-  100% {
-    transform: rotateX(55deg) rotateY(-25deg) rotateZ(0deg);
-  }
-}
-
 /* Floating Surrounding Chips (3D Layering) */
 .floating-chip {
   position: absolute;
@@ -112,6 +99,45 @@ html {
   }
   100% {
     transform: translateY(-6px) translateZ(35px);
+  }
+}
+
+/* ==================== STICKY STACKING PROJECT CARDS ==================== */
+#projects-grid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 2.5rem;
+}
+
+.project-card {
+  position: sticky;
+  top: 92px;
+  background-color: #0a0a0a !important;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  box-shadow: 0 -12px 32px rgba(0, 0, 0, 0.95), 0 24px 48px rgba(0, 0, 0, 0.9);
+  border-radius: 1.75rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  will-change: top, transform;
+}
+
+/* Staggered progressive offsets for smooth stacking deck view */
+@media (min-width: 640px) {
+  .project-card:nth-child(1) { top: 92px; z-index: 10; }
+  .project-card:nth-child(2) { top: 104px; z-index: 11; }
+  .project-card:nth-child(3) { top: 116px; z-index: 12; }
+  .project-card:nth-child(4) { top: 128px; z-index: 13; }
+  .project-card:nth-child(5) { top: 140px; z-index: 14; }
+  .project-card:nth-child(6) { top: 152px; z-index: 15; }
+  .project-card:nth-child(7) { top: 164px; z-index: 16; }
+  .project-card:nth-child(8) { top: 176px; z-index: 17; }
+  .project-card:nth-child(9) { top: 188px; z-index: 18; }
+}
+
+@media (max-width: 639px) {
+  .project-card {
+    top: 80px !important;
   }
 }
 

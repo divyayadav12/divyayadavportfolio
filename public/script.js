@@ -342,11 +342,11 @@ function initProjectFiltering() {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => {
         b.classList.remove('active', 'bg-white', 'text-black', 'shadow-lg');
-        b.classList.add('bg-[#151821]', 'text-slate-300', 'border', 'border-white/[0.08]');
+        b.classList.add('bg-[#111111]', 'text-slate-300', 'border', 'border-white/[0.08]');
       });
 
       btn.classList.add('active', 'bg-white', 'text-black', 'shadow-lg');
-      btn.classList.remove('bg-[#151821]', 'text-slate-300');
+      btn.classList.remove('bg-[#111111]', 'text-slate-300');
 
       const filter = btn.getAttribute('data-filter');
 
@@ -415,7 +415,7 @@ function initProjectModal() {
           ` : ''}
 
           <!-- Role & Impact Box -->
-          <div class="p-4 rounded-2xl bg-[#1b1f2b] border border-white/15 space-y-1.5">
+          <div class="p-4 rounded-2xl bg-[#111111] border border-white/15 space-y-1.5">
             <div class="text-xs font-bold text-white">
               Role: <span class="text-slate-300 font-normal">${proj.role}</span>
             </div>
@@ -443,7 +443,7 @@ function initProjectModal() {
           </div>
 
           <!-- Architecture Note -->
-          <div class="p-3.5 rounded-xl bg-[#181b24] text-xs text-slate-300 border border-white/10 font-mono">
+          <div class="p-3.5 rounded-xl bg-[#0a0a0a] text-xs text-slate-300 border border-white/10 font-mono">
             <span class="text-white font-bold">System Architecture:</span> ${proj.architecture}
           </div>
 
@@ -451,7 +451,7 @@ function initProjectModal() {
           <div class="pt-2">
             <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Technologies Used</h4>
             <div class="flex flex-wrap gap-1.5">
-              ${proj.tech.map(t => `<span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">${t}</span>`).join('')}
+              ${proj.tech.map(t => `<span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#111111] border border-white/10 text-slate-300">${t}</span>`).join('')}
             </div>
           </div>
         </div>
