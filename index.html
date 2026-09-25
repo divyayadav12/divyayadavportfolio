@@ -615,79 +615,96 @@
           <button class="project-filter-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-white text-black shadow-lg" data-filter="all">
             All Projects (9)
           </button>
+          <button class="project-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-[#151821] text-slate-300 hover:text-white border border-white/[0.08]" data-filter="live">
+            🟢 Live Deployed Apps (4)
+          </button>
           <button class="project-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-[#151821] text-slate-300 hover:text-white border border-white/[0.08]" data-filter="featured">
-            ⭐ Featured Flagships (4)
+            ⭐ Flagship Systems
           </button>
           <button class="project-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-[#151821] text-slate-300 hover:text-white border border-white/[0.08]" data-filter="saas">
             Enterprise & SaaS
-          </button>
-          <button class="project-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-[#151821] text-slate-300 hover:text-white border border-white/[0.08]" data-filter="realtime">
-            Real-Time & APIs
-          </button>
-          <button class="project-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-[#151821] text-slate-300 hover:text-white border border-white/[0.08]" data-filter="frontend">
-            Frontend & 3D
           </button>
         </div>
 
         <!-- Projects Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="projects-grid">
           
-          <!-- PROJECT 01: FAST HRM -->
+          <!-- PROJECT 01: FAST HRM (FLAGSHIP) -->
           <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/20 overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-white/40 shadow-xl reveal-on-scroll" data-category="featured saas">
-            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+            
+            <!-- Browser Mockup Header & Frontend UI Preview -->
+            <div class="p-5 pb-0">
+              <div class="w-full h-44 rounded-2xl overflow-hidden bg-[#0d1017] border border-white/10 flex flex-col group-hover:border-white/25 transition-all shadow-inner">
+                <!-- Browser Bar -->
+                <div class="h-7 px-3 bg-[#161a24] border-b border-white/10 flex items-center justify-between shrink-0">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                  </div>
+                  <span class="text-[10px] font-mono text-slate-400 bg-black/40 px-2 py-0.5 rounded">fast-hrm.internal.portal</span>
+                  <span class="w-3 h-3 text-slate-500">🔒</span>
+                </div>
+                <!-- UI Preview Content -->
+                <div class="p-3.5 flex-1 flex flex-col justify-between bg-gradient-to-br from-[#12151f] to-[#0a0c12]">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <div class="w-6 h-6 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs font-bold">HR</div>
+                      <span class="text-xs font-bold text-white">Employee WorkPulse</span>
+                    </div>
+                    <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-mono">🟢 Shift Active</span>
+                  </div>
+                  <div class="grid grid-cols-2 gap-2 my-1.5">
+                    <div class="p-2 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[9px] text-slate-400">Daily Attendance</div>
+                      <div class="text-xs font-bold text-white">09:14 AM (Logged)</div>
+                    </div>
+                    <div class="p-2 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[9px] text-slate-400">Live Work Timer</div>
+                      <div class="text-xs font-mono font-bold text-cyan-400">06h : 42m : 15s</div>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between text-[9px] text-slate-400 border-t border-white/5 pt-1.5">
+                    <span>Task: REST API Integration</span>
+                    <span class="text-emerald-400 font-semibold">RBAC Verified</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 sm:p-7 pt-4 flex-1 flex flex-col justify-between">
               <div>
-                <div class="flex items-center justify-between gap-2 mb-4">
-                  <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/20 flex items-center gap-1.5">
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-white/10 text-white border border-white/20 flex items-center gap-1.5">
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                     FLAGSHIP PRODUCTION
                   </span>
-                  <span class="text-xs font-mono font-semibold text-slate-400">Project 01</span>
+                  <span class="text-xs font-mono font-semibold text-slate-400">01</span>
                 </div>
 
-                <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
-                  HRM Management System
+                <h3 class="text-lg sm:text-xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
+                  FAST HRM Management System
                 </h3>
                 <p class="text-xs font-semibold text-slate-300 mt-0.5">
-                  Real-World Employee Management Platform
+                  Real-World Employee, Attendance & Admin Platform
                 </p>
 
-                <p class="text-sm text-slate-300 mt-3 leading-relaxed">
-                  A full-stack HRM platform designed to manage employee operations, attendance, leave, tasks, work status and administrative workflows.
+                <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+                  Production-grade HRM platform managing daily office operations, attendance, leave workflows, live task tracking, and timer recovery.
                 </p>
 
-                <div class="mt-4 space-y-1.5 text-xs text-slate-300">
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                    <span>Employee management & Admin/Employee login</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                    <span>Role-based access & Attendance management</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                    <span>Leave management & Task/Work status tracking</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                    <span>Admin dashboard & Forgot/Restart work logic</span>
-                  </div>
-                </div>
-
-                <div class="mt-4 p-2.5 rounded-xl bg-[#1b1f2b] border border-white/10 text-xs text-slate-200 flex items-center gap-2">
-                  <i data-lucide="zap" class="w-4 h-4 shrink-0 text-amber-400"></i>
-                  <span><strong>Impact:</strong> Used in real-world office operations.</span>
+                <div class="mt-3 p-2 rounded-xl bg-[#1b1f2b] border border-white/10 text-[11px] text-slate-200 flex items-center gap-2">
+                  <i data-lucide="zap" class="w-3.5 h-3.5 shrink-0 text-amber-400"></i>
+                  <span><strong>Live Impact:</strong> Deployed in active daily office operations.</span>
                 </div>
               </div>
 
-              <div class="pt-5 mt-4 border-t border-white/[0.08]">
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">React.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">TypeScript</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Node.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Express.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">MongoDB</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">REST APIs</span>
+              <div class="pt-4 mt-3 border-t border-white/[0.08]">
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">React.js</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">TypeScript</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Node.js</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">MongoDB</span>
                 </div>
 
                 <button class="open-modal-btn w-full py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-[#1a1d26] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-2 transition-all" data-project-index="0">
@@ -699,292 +716,447 @@
             </div>
           </div>
 
-          <!-- PROJECT 02: FAST CAREER PLATFORM -->
-          <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/[0.08] overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-white/30 reveal-on-scroll" data-category="featured saas">
-            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+          <!-- PROJECT 02: MARKETING CREATOR MARKETPLACE (LIVE) -->
+          <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/20 overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-emerald-500/40 shadow-xl reveal-on-scroll" data-category="live featured saas">
+            
+            <!-- Browser Mockup Header & Frontend UI Preview -->
+            <div class="p-5 pb-0">
+              <div class="w-full h-44 rounded-2xl overflow-hidden bg-[#0a0a0c] border border-white/10 flex flex-col group-hover:border-emerald-500/30 transition-all shadow-inner">
+                <!-- Browser Bar -->
+                <div class="h-7 px-3 bg-[#15171f] border-b border-white/10 flex items-center justify-between shrink-0">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                  </div>
+                  <a href="https://marketing-sandy-pi.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-[10px] font-mono text-emerald-400 bg-black/40 px-2 py-0.5 rounded hover:underline truncate max-w-[180px]">
+                    marketing-sandy-pi.vercel.app ↗
+                  </a>
+                  <span class="w-3 h-3 text-emerald-400 font-bold text-[10px]">🟢</span>
+                </div>
+                <!-- UI Preview Content -->
+                <div class="p-3.5 flex-1 flex flex-col justify-between bg-gradient-to-br from-[#0c0d14] via-[#10121d] to-[#08090e] text-left">
+                  <div class="flex items-center justify-between">
+                    <div class="text-[11px] font-bold text-white flex items-center gap-1.5">
+                      <span class="w-4 h-4 rounded bg-gradient-to-r from-violet-500 to-pink-500 flex items-center justify-center text-[9px]">AI</span>
+                      <span>Creator Marketplace</span>
+                    </div>
+                    <span class="text-[9px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30">99% Match</span>
+                  </div>
+                  <div class="grid grid-cols-2 gap-2 my-1">
+                    <div class="p-1.5 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[8px] text-slate-400">Escrow Secured</div>
+                      <div class="text-xs font-bold text-white">$12,500.00</div>
+                    </div>
+                    <div class="p-1.5 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[8px] text-slate-400">Social Analytics</div>
+                      <div class="text-xs font-bold text-emerald-400">+24.5% Viral</div>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between text-[9px] text-slate-400 border-t border-white/5 pt-1">
+                    <span>PGVector 1536-D AI Embeddings</span>
+                    <span class="text-violet-400 font-mono">Next.js 15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 sm:p-7 pt-4 flex-1 flex flex-col justify-between">
               <div>
-                <div class="flex items-center justify-between gap-2 mb-4">
-                  <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/20">
-                    RECRUITMENT PLATFORM
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    LIVE PRODUCTION APP
                   </span>
-                  <span class="text-xs font-mono font-semibold text-slate-400">Project 02</span>
+                  <span class="text-xs font-mono font-semibold text-slate-400">02</span>
                 </div>
 
-                <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
-                  FAST Career Website
+                <h3 class="text-lg sm:text-xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
+                  AI Creator Marketplace & Marketing
                 </h3>
                 <p class="text-xs font-semibold text-slate-300 mt-0.5">
-                  Career & Recruitment Management Platform
+                  Influencer Discovery, Analytics & Escrow Engine
                 </p>
 
-                <p class="text-sm text-slate-300 mt-3 leading-relaxed">
-                  A recruitment-focused web platform that manages job listings, candidate applications, candidate profiles, resume information and recruitment workflows.
+                <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+                  Influencer marketing platform with mathematical PGVector AI creator matchmaking, live YouTube/Instagram metrics, and escrow billing.
                 </p>
 
-                <div class="mt-4 space-y-1.5 text-xs text-slate-300">
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Candidate registration & Job listing</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Experienced candidate forms & Resume upload</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Candidate online test & Answer recording</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Admin candidate management & Live deployment</span>
-                  </div>
+                <div class="mt-3 p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-[11px] text-emerald-300 flex items-center gap-2">
+                  <i data-lucide="globe" class="w-3.5 h-3.5 shrink-0 text-emerald-400"></i>
+                  <span class="truncate"><strong>Live App:</strong> marketing-sandy-pi.vercel.app</span>
+                </div>
+              </div>
+
+              <div class="pt-4 mt-3 border-t border-white/[0.08]">
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Next.js</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">TypeScript</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Tailwind CSS</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Vercel</span>
                 </div>
 
-                <div class="mt-4 p-2.5 rounded-xl bg-[#1b1f2b] border border-white/10 text-xs text-slate-200 flex items-center gap-2">
-                  <i data-lucide="rocket" class="w-4 h-4 shrink-0 text-cyan-400"></i>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="https://marketing-sandy-pi.vercel.app/" target="_blank" rel="noopener noreferrer" class="py-2.5 px-3 rounded-xl text-xs font-bold text-black bg-emerald-400 hover:bg-emerald-300 flex items-center justify-center gap-1.5 transition-all shadow-md">
+                    <span>Live Demo</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  </a>
+                  <button class="open-modal-btn py-2.5 px-3 rounded-xl text-xs font-bold text-white bg-[#1a1d26] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-1.5 transition-all" data-project-index="1">
+                    <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                    <span>Details</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PROJECT 03: LUXURY WEDDING PORTAL (LIVE) -->
+          <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/20 overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-emerald-500/40 shadow-xl reveal-on-scroll" data-category="live featured frontend">
+            
+            <!-- Browser Mockup Header & Frontend UI Preview -->
+            <div class="p-5 pb-0">
+              <div class="w-full h-44 rounded-2xl overflow-hidden bg-[#1e1a14] border border-white/10 flex flex-col group-hover:border-amber-500/30 transition-all shadow-inner">
+                <!-- Browser Bar -->
+                <div class="h-7 px-3 bg-[#241e17] border-b border-white/10 flex items-center justify-between shrink-0">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                  </div>
+                  <a href="https://websidewedding-nine.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-[10px] font-mono text-amber-300 bg-black/40 px-2 py-0.5 rounded hover:underline truncate max-w-[180px]">
+                    websidewedding-nine.vercel.app ↗
+                  </a>
+                  <span class="w-3 h-3 text-emerald-400 font-bold text-[10px]">🟢</span>
+                </div>
+                <!-- UI Preview Content -->
+                <div class="p-3.5 flex-1 flex flex-col justify-between bg-gradient-to-br from-[#2a241b] via-[#1f1a13] to-[#120f0a] text-left">
+                  <div class="flex items-center justify-between">
+                    <span class="text-[10px] uppercase font-mono tracking-widest text-amber-200">LUXURY CINEMATOGRAPHY</span>
+                    <span class="text-[9px] px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-semibold">Film & Visuals</span>
+                  </div>
+                  <div class="my-1">
+                    <div class="text-sm font-serif font-bold text-white">Timeless Wedding Films</div>
+                    <div class="text-[10px] text-amber-200/80 italic">Capturing honest moments across Australia</div>
+                  </div>
+                  <div class="flex items-center justify-between text-[9px] text-amber-100/70 border-t border-white/10 pt-1.5">
+                    <span>Couple Reels & Booking Engine</span>
+                    <span class="text-white font-mono font-semibold">Next.js + Vercel</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 sm:p-7 pt-4 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-500/15 text-amber-400 border border-amber-500/30 flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+                    LIVE CLIENT WEBSITE
+                  </span>
+                  <span class="text-xs font-mono font-semibold text-slate-400">03</span>
+                </div>
+
+                <h3 class="text-lg sm:text-xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
+                  Luxury Wedding Films & Photography
+                </h3>
+                <p class="text-xs font-semibold text-slate-300 mt-0.5">
+                  Cinematic Videography, Booking & Portfolio
+                </p>
+
+                <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+                  High-end luxury wedding photography & cinematography platform with responsive video portfolio galleries, testimonials, and inquiry intake.
+                </p>
+
+                <div class="mt-3 p-2 rounded-xl bg-amber-500/10 border border-amber-500/20 text-[11px] text-amber-300 flex items-center gap-2">
+                  <i data-lucide="globe" class="w-3.5 h-3.5 shrink-0 text-amber-400"></i>
+                  <span class="truncate"><strong>Live App:</strong> websidewedding-nine.vercel.app</span>
+                </div>
+              </div>
+
+              <div class="pt-4 mt-3 border-t border-white/[0.08]">
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Next.js</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">React</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Tailwind CSS</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Vercel</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="https://websidewedding-nine.vercel.app/" target="_blank" rel="noopener noreferrer" class="py-2.5 px-3 rounded-xl text-xs font-bold text-black bg-amber-400 hover:bg-amber-300 flex items-center justify-center gap-1.5 transition-all shadow-md">
+                    <span>Live Demo</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  </a>
+                  <button class="open-modal-btn py-2.5 px-3 rounded-xl text-xs font-bold text-white bg-[#1a1d26] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-1.5 transition-all" data-project-index="2">
+                    <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                    <span>Details</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PROJECT 04: BHUMI CRED (LIVE) -->
+          <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/20 overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-emerald-500/40 shadow-xl reveal-on-scroll" data-category="live saas">
+            
+            <!-- Browser Mockup Header & Frontend UI Preview -->
+            <div class="p-5 pb-0">
+              <div class="w-full h-44 rounded-2xl overflow-hidden bg-[#0c141c] border border-white/10 flex flex-col group-hover:border-cyan-500/30 transition-all shadow-inner">
+                <!-- Browser Bar -->
+                <div class="h-7 px-3 bg-[#131d28] border-b border-white/10 flex items-center justify-between shrink-0">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                  </div>
+                  <a href="https://bhumicredweb-qbama8yrk-divyayadav12s-projects.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-[10px] font-mono text-cyan-300 bg-black/40 px-2 py-0.5 rounded hover:underline truncate max-w-[180px]">
+                    bhumicredweb.vercel.app ↗
+                  </a>
+                  <span class="w-3 h-3 text-emerald-400 font-bold text-[10px]">🟢</span>
+                </div>
+                <!-- UI Preview Content -->
+                <div class="p-3.5 flex-1 flex flex-col justify-between bg-gradient-to-br from-[#0c1622] via-[#09111b] to-[#050b12] text-left">
+                  <div class="flex items-center justify-between">
+                    <div class="text-[11px] font-bold text-white flex items-center gap-1.5">
+                      <span class="w-4 h-4 rounded bg-cyan-500 text-black font-bold flex items-center justify-center text-[9px]">BC</span>
+                      <span>Bhumi Cred Portal</span>
+                    </div>
+                    <span class="text-[9px] px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-bold">Credit Score 780+</span>
+                  </div>
+                  <div class="grid grid-cols-2 gap-2 my-1">
+                    <div class="p-1.5 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[8px] text-slate-400">Land Loan Check</div>
+                      <div class="text-xs font-bold text-white">Eligible (₹25L)</div>
+                    </div>
+                    <div class="p-1.5 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[8px] text-slate-400">Doc Verification</div>
+                      <div class="text-xs font-bold text-emerald-400">100% Verified</div>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between text-[9px] text-slate-400 border-t border-white/5 pt-1">
+                    <span>Fintech Credit Assessment</span>
+                    <span class="text-cyan-400 font-mono">React + Vite</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 sm:p-7 pt-4 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-cyan-500/15 text-cyan-400 border border-cyan-500/30 flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+                    LIVE FINTECH PORTAL
+                  </span>
+                  <span class="text-xs font-mono font-semibold text-slate-400">04</span>
+                </div>
+
+                <h3 class="text-lg sm:text-xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
+                  Bhumi Cred — Real Estate & Credit
+                </h3>
+                <p class="text-xs font-semibold text-slate-300 mt-0.5">
+                  Property Financing & Loan Eligibility Engine
+                </p>
+
+                <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+                  Fintech credit assessment portal for land loan eligibility, credit scoring, document intake, and financial profile management.
+                </p>
+
+                <div class="mt-3 p-2 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-[11px] text-cyan-300 flex items-center gap-2">
+                  <i data-lucide="globe" class="w-3.5 h-3.5 shrink-0 text-cyan-400"></i>
+                  <span class="truncate"><strong>Live App:</strong> bhumicredweb-qbama8yrk...</span>
+                </div>
+              </div>
+
+              <div class="pt-4 mt-3 border-t border-white/[0.08]">
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">React.js</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">TypeScript</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Tailwind CSS</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Vercel</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="https://bhumicredweb-qbama8yrk-divyayadav12s-projects.vercel.app/" target="_blank" rel="noopener noreferrer" class="py-2.5 px-3 rounded-xl text-xs font-bold text-black bg-cyan-400 hover:bg-cyan-300 flex items-center justify-center gap-1.5 transition-all shadow-md">
+                    <span>Live Demo</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  </a>
+                  <button class="open-modal-btn py-2.5 px-3 rounded-xl text-xs font-bold text-white bg-[#1a1d26] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-1.5 transition-all" data-project-index="3">
+                    <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                    <span>Details</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PROJECT 05: CA FINAL PREP (LIVE) -->
+          <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/20 overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-emerald-500/40 shadow-xl reveal-on-scroll" data-category="live frontend">
+            
+            <!-- Browser Mockup Header & Frontend UI Preview -->
+            <div class="p-5 pb-0">
+              <div class="w-full h-44 rounded-2xl overflow-hidden bg-[#101018] border border-white/10 flex flex-col group-hover:border-indigo-500/30 transition-all shadow-inner">
+                <!-- Browser Bar -->
+                <div class="h-7 px-3 bg-[#181824] border-b border-white/10 flex items-center justify-between shrink-0">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                  </div>
+                  <a href="https://ca-final-web.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-[10px] font-mono text-indigo-300 bg-black/40 px-2 py-0.5 rounded hover:underline truncate max-w-[180px]">
+                    ca-final-web.vercel.app ↗
+                  </a>
+                  <span class="w-3 h-3 text-emerald-400 font-bold text-[10px]">🟢</span>
+                </div>
+                <!-- UI Preview Content -->
+                <div class="p-3.5 flex-1 flex flex-col justify-between bg-gradient-to-br from-[#121122] via-[#0d0d17] to-[#07070d] text-left">
+                  <div class="flex items-center justify-between">
+                    <div class="text-[11px] font-bold text-white flex items-center gap-1.5">
+                      <span class="w-4 h-4 rounded bg-indigo-600 text-white font-bold flex items-center justify-center text-[9px]">CA</span>
+                      <span>CA Final Prep Reality Check</span>
+                    </div>
+                    <span class="text-[9px] px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 font-mono">Nov 26 Target</span>
+                  </div>
+                  <div class="grid grid-cols-2 gap-2 my-1">
+                    <div class="p-1.5 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[8px] text-slate-400">Syllabus Covered</div>
+                      <div class="text-xs font-bold text-emerald-400">84% Completed</div>
+                    </div>
+                    <div class="p-1.5 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[8px] text-slate-400">Daily Study Target</div>
+                      <div class="text-xs font-mono font-bold text-white">8.5 Hrs / Day</div>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between text-[9px] text-slate-400 border-t border-white/5 pt-1">
+                    <span>Revision Tracker & Mock Analytics</span>
+                    <span class="text-indigo-400 font-mono">React + Vite</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 sm:p-7 pt-4 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-indigo-500/15 text-indigo-400 border border-indigo-500/30 flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse"></span>
+                    LIVE EDTECH APP
+                  </span>
+                  <span class="text-xs font-mono font-semibold text-slate-400">05</span>
+                </div>
+
+                <h3 class="text-lg sm:text-xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
+                  CA Final Prep & Reality Check
+                </h3>
+                <p class="text-xs font-semibold text-slate-300 mt-0.5">
+                  Interactive Exam Readiness & Syllabus Dashboard
+                </p>
+
+                <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+                  Dedicated revision milestone dashboard for Chartered Accountant candidates with exam countdown targets, syllabus tracker, and mock scoring.
+                </p>
+
+                <div class="mt-3 p-2 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-[11px] text-indigo-300 flex items-center gap-2">
+                  <i data-lucide="globe" class="w-3.5 h-3.5 shrink-0 text-indigo-400"></i>
+                  <span class="truncate"><strong>Live App:</strong> ca-final-web.vercel.app</span>
+                </div>
+              </div>
+
+              <div class="pt-4 mt-3 border-t border-white/[0.08]">
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">React.js</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Vite</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Tailwind CSS</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Vercel</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="https://ca-final-web.vercel.app/" target="_blank" rel="noopener noreferrer" class="py-2.5 px-3 rounded-xl text-xs font-bold text-black bg-indigo-400 hover:bg-indigo-300 flex items-center justify-center gap-1.5 transition-all shadow-md">
+                    <span>Live Demo</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  </a>
+                  <button class="open-modal-btn py-2.5 px-3 rounded-xl text-xs font-bold text-white bg-[#1a1d26] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-1.5 transition-all" data-project-index="4">
+                    <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                    <span>Details</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PROJECT 06: FAST CAREER (RECRUITMENT PLATFORM) -->
+          <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/[0.08] overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-white/30 reveal-on-scroll" data-category="featured saas">
+            
+            <!-- Browser Mockup Header & Frontend UI Preview -->
+            <div class="p-5 pb-0">
+              <div class="w-full h-44 rounded-2xl overflow-hidden bg-[#0e121a] border border-white/10 flex flex-col group-hover:border-white/25 transition-all shadow-inner">
+                <div class="h-7 px-3 bg-[#151c27] border-b border-white/10 flex items-center justify-between shrink-0">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                  </div>
+                  <span class="text-[10px] font-mono text-slate-400 bg-black/40 px-2 py-0.5 rounded">careers.fast.corporate</span>
+                  <span class="w-3 h-3 text-slate-500">🔒</span>
+                </div>
+                <div class="p-3.5 flex-1 flex flex-col justify-between bg-gradient-to-br from-[#101622] to-[#0a0d14] text-left">
+                  <div class="flex items-center justify-between">
+                    <span class="text-xs font-bold text-white">FAST Recruitment ATS</span>
+                    <span class="text-[9px] px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 font-mono">14 Openings</span>
+                  </div>
+                  <div class="grid grid-cols-2 gap-2 my-1">
+                    <div class="p-1.5 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[8px] text-slate-400">Resume Parser</div>
+                      <div class="text-xs font-bold text-white">Auto Extracted</div>
+                    </div>
+                    <div class="p-1.5 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[8px] text-slate-400">Online Test</div>
+                      <div class="text-xs font-bold text-cyan-400">Timed Engine</div>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between text-[9px] text-slate-400 border-t border-white/5 pt-1">
+                    <span>Admin Candidate Pipeline</span>
+                    <span class="text-blue-400 font-mono">React + Express</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 sm:p-7 pt-4 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-white/10 text-white border border-white/20">
+                    RECRUITMENT PLATFORM
+                  </span>
+                  <span class="text-xs font-mono font-semibold text-slate-400">06</span>
+                </div>
+
+                <h3 class="text-lg sm:text-xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
+                  FAST Career & ATS Portal
+                </h3>
+                <p class="text-xs font-semibold text-slate-300 mt-0.5">
+                  Job Listing, Candidate ATS & Online Assessment
+                </p>
+
+                <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+                  Recruitment platform managing dynamic job postings, candidate resume intake pipelines, online aptitude testing, and admin candidate boards.
+                </p>
+
+                <div class="mt-3 p-2 rounded-xl bg-[#1b1f2b] border border-white/10 text-[11px] text-slate-200 flex items-center gap-2">
+                  <i data-lucide="rocket" class="w-3.5 h-3.5 shrink-0 text-cyan-400"></i>
                   <span><strong>Role:</strong> Full Stack Developer (API & Live Deployment)</span>
                 </div>
               </div>
 
-              <div class="pt-5 mt-4 border-t border-white/[0.08]">
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">React.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">TypeScript</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Node.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Express.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">MongoDB</span>
-                </div>
-
-                <button class="open-modal-btn w-full py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-[#1a1d26] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-2 transition-all" data-project-index="1">
-                  <i data-lucide="eye" class="w-4 h-4"></i>
-                  <span>View Full Architecture & Details</span>
-                </button>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- PROJECT 03: PROPETER SAAS -->
-          <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/[0.08] overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-white/30 reveal-on-scroll" data-category="featured saas">
-            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between gap-2 mb-4">
-                  <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/20">
-                    ENTERPRISE SAAS
-                  </span>
-                  <span class="text-xs font-mono font-semibold text-slate-400">Project 03</span>
-                </div>
-
-                <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
-                  Propeter — Property Management
-                </h3>
-                <p class="text-xs font-semibold text-slate-300 mt-0.5">
-                  Property Management SaaS Platform
-                </p>
-
-                <p class="text-sm text-slate-300 mt-3 leading-relaxed">
-                  A property management SaaS platform designed to manage property-related operations through role-based administrative interfaces.
-                </p>
-
-                <div class="mt-4 space-y-1.5 text-xs text-slate-300">
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Multi-level administrative access (TENANT, PROPERTY, SUPERADMIN)</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Role/privilege-based UI & Protected routes</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Permission mapping & API payload handling</span>
-                  </div>
-                </div>
-
-                <div class="mt-4 p-2.5 rounded-xl bg-[#1b1f2b] border border-white/10 text-xs text-slate-200 flex items-center gap-2">
-                  <i data-lucide="layers" class="w-4 h-4 shrink-0 text-blue-400"></i>
-                  <span><strong>Role:</strong> MERN Stack Developer (Ideas2Goal)</span>
-                </div>
-              </div>
-
-              <div class="pt-5 mt-4 border-t border-white/[0.08]">
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">React.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">TypeScript</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Node.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">PostgreSQL</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Nginx</span>
-                </div>
-
-                <button class="open-modal-btn w-full py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-[#1a1d26] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-2 transition-all" data-project-index="2">
-                  <i data-lucide="eye" class="w-4 h-4"></i>
-                  <span>View Full Architecture & Details</span>
-                </button>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- PROJECT 04: XERO INTEGRATION -->
-          <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/[0.08] overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-white/30 reveal-on-scroll" data-category="featured realtime">
-            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between gap-2 mb-4">
-                  <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/20">
-                    FINANCIAL INTEGRATION
-                  </span>
-                  <span class="text-xs font-mono font-semibold text-slate-400">Project 04</span>
-                </div>
-
-                <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
-                  Xero Accounting Integration
-                </h3>
-                <p class="text-xs font-semibold text-slate-300 mt-0.5">
-                  Automated Invoicing & Webhook Engine
-                </p>
-
-                <p class="text-sm text-slate-300 mt-3 leading-relaxed">
-                  Integrated Xero accounting services into a business application to automate invoice workflows and track payment-related events.
-                </p>
-
-                <div class="mt-4 space-y-1.5 text-xs text-slate-300">
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Xero authentication & Invoice creation</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Payment tracking & Webhook integration</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Real-time event updates & Automated workflows</span>
-                  </div>
-                </div>
-
-                <div class="mt-4 p-2.5 rounded-xl bg-[#1b1f2b] border border-white/10 text-xs text-slate-200 flex items-center gap-2">
-                  <i data-lucide="check-check" class="w-4 h-4 shrink-0 text-emerald-400"></i>
-                  <span><strong>Documented on Resume:</strong> Xero & Webhooks</span>
-                </div>
-              </div>
-
-              <div class="pt-5 mt-4 border-t border-white/[0.08]">
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Node.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">React.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">TypeScript</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Xero API</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Webhooks</span>
-                </div>
-
-                <button class="open-modal-btn w-full py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-[#1a1d26] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-2 transition-all" data-project-index="3">
-                  <i data-lucide="eye" class="w-4 h-4"></i>
-                  <span>View Full Architecture & Details</span>
-                </button>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- PROJECT 05: ENTERPRISE EMAIL -->
-          <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/[0.08] overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-white/30 reveal-on-scroll" data-category="saas realtime">
-            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between gap-2 mb-4">
-                  <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/20">
-                    REAL-TIME EMAIL
-                  </span>
-                  <span class="text-xs font-mono font-semibold text-slate-400">Project 05</span>
-                </div>
-
-                <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
-                  Enterprise Email Platform
-                </h3>
-                <p class="text-xs font-semibold text-slate-300 mt-0.5">
-                  Business-Oriented Email Management
-                </p>
-
-                <p class="text-sm text-slate-300 mt-3 leading-relaxed">
-                  A business-oriented email platform designed for managing inboxes, email conversations and real-time notifications.
-                </p>
-
-                <div class="mt-4 space-y-1.5 text-xs text-slate-300">
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Inbox management & Email threading</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Search, filters & labels</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Real-time notifications via WebSockets</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="pt-5 mt-4 border-t border-white/[0.08]">
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">React.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Node.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">MongoDB</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">WebSockets</span>
-                </div>
-
-                <button class="open-modal-btn w-full py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-[#1a1d26] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-2 transition-all" data-project-index="4">
-                  <i data-lucide="eye" class="w-4 h-4"></i>
-                  <span>View Full Architecture & Details</span>
-                </button>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- PROJECT 06: HOZIFY ADMIN -->
-          <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/[0.08] overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-white/30 reveal-on-scroll" data-category="saas frontend">
-            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between gap-2 mb-4">
-                  <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/20">
-                    DASHBOARD & OPS
-                  </span>
-                  <span class="text-xs font-mono font-semibold text-slate-400">Project 06</span>
-                </div>
-
-                <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
-                  Hozify Admin Panel
-                </h3>
-                <p class="text-xs font-semibold text-slate-300 mt-0.5">
-                  Platform-Level Administration Suite
-                </p>
-
-                <p class="text-sm text-slate-300 mt-3 leading-relaxed">
-                  A full-featured administrative dashboard for platform-level operations, user oversight, content moderation and analytics.
-                </p>
-
-                <div class="mt-4 space-y-1.5 text-xs text-slate-300">
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Admin dashboard & User management</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Content management & moderation</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Redux state management & Performance optimization</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="pt-5 mt-4 border-t border-white/[0.08]">
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">React.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">TypeScript</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Redux Toolkit</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Node.js</span>
+              <div class="pt-4 mt-3 border-t border-white/[0.08]">
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">React.js</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">TypeScript</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Node.js</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">MongoDB</span>
                 </div>
 
                 <button class="open-modal-btn w-full py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-[#1a1d26] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-2 transition-all" data-project-index="5">
@@ -996,50 +1168,76 @@
             </div>
           </div>
 
-          <!-- PROJECT 07: REAL-TIME CHAT & VIDEO CALL -->
-          <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/[0.08] overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-white/30 reveal-on-scroll" data-category="realtime">
-            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between gap-2 mb-4">
-                  <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/20">
-                    WEBSOCKETS & WEBRTC
-                  </span>
-                  <span class="text-xs font-mono font-semibold text-slate-400">Project 07</span>
+          <!-- PROJECT 07: PROPETER SAAS -->
+          <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/[0.08] overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-white/30 reveal-on-scroll" data-category="featured saas">
+            
+            <!-- Browser Mockup Header & Frontend UI Preview -->
+            <div class="p-5 pb-0">
+              <div class="w-full h-44 rounded-2xl overflow-hidden bg-[#0c1017] border border-white/10 flex flex-col group-hover:border-white/25 transition-all shadow-inner">
+                <div class="h-7 px-3 bg-[#141924] border-b border-white/10 flex items-center justify-between shrink-0">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                  </div>
+                  <span class="text-[10px] font-mono text-slate-400 bg-black/40 px-2 py-0.5 rounded">propeter.saas.cloud</span>
+                  <span class="w-3 h-3 text-slate-500">🔒</span>
                 </div>
-
-                <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
-                  Real-Time Chat & Video Call
-                </h3>
-                <p class="text-xs font-semibold text-slate-300 mt-0.5">
-                  Bi-Directional Messaging & Video Channels
-                </p>
-
-                <p class="text-sm text-slate-300 mt-3 leading-relaxed">
-                  A real-time communication application supporting instant chat, video calling, online/offline status and typing indicators.
-                </p>
-
-                <div class="mt-4 space-y-1.5 text-xs text-slate-300">
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Real-time chat & One-to-one communication</span>
+                <div class="p-3.5 flex-1 flex flex-col justify-between bg-gradient-to-br from-[#101520] to-[#090d14] text-left">
+                  <div class="flex items-center justify-between">
+                    <span class="text-xs font-bold text-white">Propeter Multi-Tenant</span>
+                    <span class="text-[9px] px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 font-mono">TENANT_ADMIN</span>
                   </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Video calling & Online/Offline status</span>
+                  <div class="grid grid-cols-2 gap-2 my-1">
+                    <div class="p-1.5 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[8px] text-slate-400">Managed Units</div>
+                      <div class="text-xs font-bold text-white">128 Properties</div>
+                    </div>
+                    <div class="p-1.5 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[8px] text-slate-400">PostgreSQL DB</div>
+                      <div class="text-xs font-bold text-emerald-400">RBAC Secured</div>
+                    </div>
                   </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>WebSocket & Socket.IO communication</span>
+                  <div class="flex items-center justify-between text-[9px] text-slate-400 border-t border-white/5 pt-1">
+                    <span>Privilege Route Guards</span>
+                    <span class="text-slate-400 font-mono">React + TS</span>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="pt-5 mt-4 border-t border-white/[0.08]">
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">React.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Node.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Socket.IO</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Tailwind CSS</span>
+            <div class="p-6 sm:p-7 pt-4 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-white/10 text-white border border-white/20">
+                    ENTERPRISE SAAS
+                  </span>
+                  <span class="text-xs font-mono font-semibold text-slate-400">07</span>
+                </div>
+
+                <h3 class="text-lg sm:text-xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
+                  Propeter Property Management SaaS
+                </h3>
+                <p class="text-xs font-semibold text-slate-300 mt-0.5">
+                  Multi-Tier Privilege Access & Property Operations
+                </p>
+
+                <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+                  Property management SaaS platform engineered with strict privilege-based access control, route protection, and PostgreSQL relational schemas.
+                </p>
+
+                <div class="mt-3 p-2 rounded-xl bg-[#1b1f2b] border border-white/10 text-[11px] text-slate-200 flex items-center gap-2">
+                  <i data-lucide="layers" class="w-3.5 h-3.5 shrink-0 text-blue-400"></i>
+                  <span><strong>Role:</strong> MERN Stack Developer (Ideas2Goal)</span>
+                </div>
+              </div>
+
+              <div class="pt-4 mt-3 border-t border-white/[0.08]">
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">React.js</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">TypeScript</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">PostgreSQL</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Nginx</span>
                 </div>
 
                 <button class="open-modal-btn w-full py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-[#1a1d26] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-2 transition-all" data-project-index="6">
@@ -1051,51 +1249,76 @@
             </div>
           </div>
 
-          <!-- PROJECT 08: MACBOOK 3D LANDING PAGE -->
-          <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/[0.08] overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-white/30 reveal-on-scroll" data-category="frontend">
-            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between gap-2 mb-4">
-                  <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/20">
-                    THREE.JS & 3D WEB
-                  </span>
-                  <span class="text-xs font-mono font-semibold text-slate-400">Project 08</span>
+          <!-- PROJECT 08: XERO INTEGRATION -->
+          <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/[0.08] overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-white/30 reveal-on-scroll" data-category="featured realtime">
+            
+            <!-- Browser Mockup Header & Frontend UI Preview -->
+            <div class="p-5 pb-0">
+              <div class="w-full h-44 rounded-2xl overflow-hidden bg-[#0d1217] border border-white/10 flex flex-col group-hover:border-white/25 transition-all shadow-inner">
+                <div class="h-7 px-3 bg-[#131b22] border-b border-white/10 flex items-center justify-between shrink-0">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                  </div>
+                  <span class="text-[10px] font-mono text-slate-400 bg-black/40 px-2 py-0.5 rounded">api.xero.webhook-sync</span>
+                  <span class="w-3 h-3 text-slate-500">⚡</span>
                 </div>
-
-                <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
-                  MacBook 3D Landing Page
-                </h3>
-                <p class="text-xs font-semibold text-slate-300 mt-0.5">
-                  Interactive 3D Product Experience
-                </p>
-
-                <p class="text-sm text-slate-300 mt-3 leading-relaxed">
-                  An interactive 3D product landing page focused on modern frontend experiences using React Three Fiber and Three.js.
-                </p>
-
-                <div class="mt-4 space-y-1.5 text-xs text-slate-300">
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>3D product visualization & Interactive model</span>
+                <div class="p-3.5 flex-1 flex flex-col justify-between bg-gradient-to-br from-[#0f1822] to-[#090f16] text-left">
+                  <div class="flex items-center justify-between">
+                    <span class="text-xs font-bold text-white">Xero Automated Sync</span>
+                    <span class="text-[9px] px-2 py-0.5 rounded bg-sky-500/20 text-sky-400 font-mono">OAuth 2.0</span>
                   </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Three.js & React Three Fiber integration</span>
+                  <div class="grid grid-cols-2 gap-2 my-1">
+                    <div class="p-1.5 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[8px] text-slate-400">Webhook Event</div>
+                      <div class="text-xs font-bold text-emerald-400">INVOICE.PAID</div>
+                    </div>
+                    <div class="p-1.5 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[8px] text-slate-400">Ledger Sync</div>
+                      <div class="text-xs font-bold text-white">Auto Reconciled</div>
+                    </div>
                   </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>GLTF model loaders & Smooth animations</span>
+                  <div class="flex items-center justify-between text-[9px] text-slate-400 border-t border-white/5 pt-1">
+                    <span>Cryptographic Signature Check</span>
+                    <span class="text-sky-400 font-mono">Node.js API</span>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="pt-5 mt-4 border-t border-white/[0.08]">
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">React.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Three.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">React Three Fiber</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">GLTF</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Vite</span>
+            <div class="p-6 sm:p-7 pt-4 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-white/10 text-white border border-white/20">
+                    FINANCIAL API INTEGRATION
+                  </span>
+                  <span class="text-xs font-mono font-semibold text-slate-400">08</span>
+                </div>
+
+                <h3 class="text-lg sm:text-xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
+                  Xero Accounting Integration
+                </h3>
+                <p class="text-xs font-semibold text-slate-300 mt-0.5">
+                  Automated Invoicing, Webhooks & Ledger Sync
+                </p>
+
+                <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+                  Automated recurring billing cycles, invoice PDF generation, and synchronized real-time payment reconciliation via Xero webhook listeners.
+                </p>
+
+                <div class="mt-3 p-2 rounded-xl bg-[#1b1f2b] border border-white/10 text-[11px] text-slate-200 flex items-center gap-2">
+                  <i data-lucide="check-check" class="w-3.5 h-3.5 shrink-0 text-emerald-400"></i>
+                  <span><strong>Key Skill:</strong> Webhook Security & Financial APIs</span>
+                </div>
+              </div>
+
+              <div class="pt-4 mt-3 border-t border-white/[0.08]">
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Node.js</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">TypeScript</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Xero API</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Webhooks</span>
                 </div>
 
                 <button class="open-modal-btn w-full py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-[#1a1d26] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-2 transition-all" data-project-index="7">
@@ -1109,49 +1332,74 @@
 
           <!-- PROJECT 09: WORKPULSE -->
           <div class="project-card group relative bg-[#141720] rounded-3xl border border-white/[0.08] overflow-hidden flex flex-col transition-all duration-500 hover:-translate-y-2 hover:border-white/30 reveal-on-scroll" data-category="saas realtime">
-            <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
-              <div>
-                <div class="flex items-center justify-between gap-2 mb-4">
-                  <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/20">
-                    PRODUCTIVITY & ANALYTICS
-                  </span>
-                  <span class="text-xs font-mono font-semibold text-slate-400">Project 09</span>
+            
+            <!-- Browser Mockup Header & Frontend UI Preview -->
+            <div class="p-5 pb-0">
+              <div class="w-full h-44 rounded-2xl overflow-hidden bg-[#0e1118] border border-white/10 flex flex-col group-hover:border-white/25 transition-all shadow-inner">
+                <div class="h-7 px-3 bg-[#151924] border-b border-white/10 flex items-center justify-between shrink-0">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
+                  </div>
+                  <span class="text-[10px] font-mono text-slate-400 bg-black/40 px-2 py-0.5 rounded">workpulse.dashboard.io</span>
+                  <span class="w-3 h-3 text-emerald-400 font-bold text-[10px]">🟢</span>
                 </div>
-
-                <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
-                  WorkPulse — Staff Work Tracking
-                </h3>
-                <p class="text-xs font-semibold text-slate-300 mt-0.5">
-                  Staff Work Tracking & Live Project Management
-                </p>
-
-                <p class="text-sm text-slate-300 mt-3 leading-relaxed">
-                  A staff productivity and project tracking platform designed for managers and employees to monitor project progress and live activity.
-                </p>
-
-                <div class="mt-4 space-y-1.5 text-xs text-slate-300">
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Employee login & Manager dashboard</span>
+                <div class="p-3.5 flex-1 flex flex-col justify-between bg-gradient-to-br from-[#101420] to-[#0a0c14] text-left">
+                  <div class="flex items-center justify-between">
+                    <span class="text-xs font-bold text-white">WorkPulse Analytics</span>
+                    <span class="text-[9px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-mono">Live Broadcast</span>
                   </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Staff work updates, live project status & activity logs</span>
+                  <div class="grid grid-cols-2 gap-2 my-1">
+                    <div class="p-1.5 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[8px] text-slate-400">Sprint Velocity</div>
+                      <div class="text-xs font-bold text-emerald-400">92% On Track</div>
+                    </div>
+                    <div class="p-1.5 rounded-lg bg-white/[0.04] border border-white/5">
+                      <div class="text-[8px] text-slate-400">Socket Channels</div>
+                      <div class="text-xs font-bold text-white">Connected (Live)</div>
+                    </div>
                   </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Socket.IO real-time updates & Recharts analytics</span>
+                  <div class="flex items-center justify-between text-[9px] text-slate-400 border-t border-white/5 pt-1">
+                    <span>Recharts Data Visualizer</span>
+                    <span class="text-purple-400 font-mono">Socket.IO + Redux</span>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="pt-5 mt-4 border-t border-white/[0.08]">
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">React.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">TypeScript</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Node.js</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Socket.IO</span>
-                  <span class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#181b24] border border-white/10 text-slate-300">Recharts</span>
+            <div class="p-6 sm:p-7 pt-4 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-white/10 text-white border border-white/20">
+                    PRODUCTIVITY & ANALYTICS
+                  </span>
+                  <span class="text-xs font-mono font-semibold text-slate-400">09</span>
+                </div>
+
+                <h3 class="text-lg sm:text-xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
+                  WorkPulse — Staff Work Tracking
+                </h3>
+                <p class="text-xs font-semibold text-slate-300 mt-0.5">
+                  Real-Time Project Status & Manager Dashboard
+                </p>
+
+                <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
+                  Staff productivity platform with real-time Socket.IO status broadcasting, activity logs, Recharts sprint charts, and managerial overview.
+                </p>
+
+                <div class="mt-3 p-2 rounded-xl bg-[#1b1f2b] border border-white/10 text-[11px] text-slate-200 flex items-center gap-2">
+                  <i data-lucide="activity" class="w-3.5 h-3.5 shrink-0 text-purple-400"></i>
+                  <span><strong>Real-Time:</strong> Live Socket Channels & Analytics</span>
+                </div>
+              </div>
+
+              <div class="pt-4 mt-3 border-t border-white/[0.08]">
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">React.js</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">TypeScript</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Socket.IO</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-mono bg-[#181b24] border border-white/10 text-slate-300">Recharts</span>
                 </div>
 
                 <button class="open-modal-btn w-full py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-[#1a1d26] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-2 transition-all" data-project-index="8">
