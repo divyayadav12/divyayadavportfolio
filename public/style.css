@@ -96,21 +96,32 @@ body {
   0% {
     transform: translateY(0px) translateZ(35px);
   }
-/* ==================== INFINITE RUNNING STATS MARQUEE ==================== */
+  100% {
+    transform: translateY(-6px) translateZ(35px);
+  }
+}
+
+/* ==================== INFINITE RUNNING STATS MARQUEE (1 SINGLE HORIZONTAL LINE) ==================== */
 .marquee-container {
   overflow: hidden;
   position: relative;
   width: 100%;
   display: flex;
-  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
 }
 
 .marquee-track {
-  display: flex;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center;
   gap: 1.25rem;
   width: max-content;
-  animation: marqueeContinuous 26s linear infinite;
+  animation: marqueeContinuous 24s linear infinite;
   will-change: transform;
 }
 
@@ -129,12 +140,17 @@ body {
 
 .stats-card {
   min-width: 250px;
-  flex-shrink: 0;
+  flex-shrink: 0 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0.875rem;
   background-color: #0a0a0a;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 1.25rem;
-  padding: 1.25rem 1.5rem;
+  padding: 1rem 1.5rem;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .stats-card:hover {
