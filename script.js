@@ -209,53 +209,25 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// ==================== 1. 3D ROTATING & SCROLL-DRIVEN AVATAR ====================
+// ==================== 1. STABLE HERO AVATAR CARD (SUBTLE INTERACTIVE TILT) ====================
 function init3DAvatar() {
   const card = document.getElementById('avatar-3d-card');
   const wrapper = document.getElementById('avatar-3d-wrapper');
   if (!card || !wrapper) return;
 
-  let baseRotation = 0;
-  let targetRotation = 0;
-  let mouseTiltX = 0;
-  let mouseTiltY = 0;
-  let lastScrollY = window.scrollY;
-  let isHovered = false;
-
   wrapper.addEventListener('mousemove', (e) => {
-    isHovered = true;
     const rect = wrapper.getBoundingClientRect();
     const x = e.clientX - rect.left - rect.width / 2;
     const y = e.clientY - rect.top - rect.height / 2;
     
-    mouseTiltY = (x / (rect.width / 2)) * 25;
-    mouseTiltX = -(y / (rect.height / 2)) * 20;
+    const tiltX = -(y / (rect.height / 2)) * 8;
+    const tiltY = (x / (rect.width / 2)) * 8;
+    card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
   });
 
   wrapper.addEventListener('mouseleave', () => {
-    isHovered = false;
-    mouseTiltX = 0;
-    mouseTiltY = 0;
+    card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
   });
-
-  window.addEventListener('scroll', () => {
-    const currentScrollY = window.scrollY;
-    const scrollDelta = currentScrollY - lastScrollY;
-    baseRotation += scrollDelta * 0.45;
-    lastScrollY = currentScrollY;
-  }, { passive: true });
-
-  function render3DLoop() {
-    if (!isHovered) {
-      baseRotation += 0.35;
-    }
-
-    targetRotation += (baseRotation + mouseTiltY - targetRotation) * 0.08;
-    card.style.transform = `rotateX(${mouseTiltX}deg) rotateY(${targetRotation}deg) translateZ(10px)`;
-    requestAnimationFrame(render3DLoop);
-  }
-
-  render3DLoop();
 }
 
 
