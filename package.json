@@ -4,6 +4,6 @@
   "private": true,
   "description": "Divya Yadav - Full Stack Web Developer Portfolio",
   "scripts": {
-    "build": "node -e \"console.log('Build completed successfully')\""
+    "build": "echo Build completed successfully"
   }
 }
