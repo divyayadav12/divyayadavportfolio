@@ -101,37 +101,6 @@ body {
   }
 }
 
-/* ==================== INFINITE RUNNING STATS MARQUEE TICKER ==================== */
-.marquee-container {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  display: flex;
-  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
-}
-
-.marquee-track {
-  display: flex;
-  width: max-content;
-  gap: 1.25rem;
-  animation: marqueeContinuous 28s linear infinite;
-  will-change: transform;
-}
-
-.marquee-container:hover .marquee-track {
-  animation-play-state: paused;
-}
-
-@keyframes marqueeContinuous {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-50% - 0.625rem));
-  }
-}
-
 /* ==================== EXACT SHERYIANS STICKY CARD STACK ==================== */
 #projects-grid {
   position: relative;
