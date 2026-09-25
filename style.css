@@ -159,22 +159,23 @@ body {
   transform: translateY(-2px);
 }
 
-/* ==================== EXACT SHERYIANS STICKY CARD STACK ==================== */
+/* ==================== PREMIUM SCROLL-DRIVEN STACKED CARDS ==================== */
 #projects-grid {
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 6rem;
 }
 
 .project-card {
   position: sticky;
-  top: 100px !important;
-  margin-bottom: 2.5rem;
-  background-color: #0a0a0a !important;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 -18px 40px rgba(0, 0, 0, 0.98), 0 25px 50px rgba(0, 0, 0, 0.95);
+  margin-bottom: 22vh;
+  background-color: #080808 !important;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 -18px 40px rgba(0, 0, 0, 0.98), 0 25px 60px rgba(0, 0, 0, 0.98);
   border-radius: 1.75rem;
   transform-origin: center top;
-  transition: transform 0.15s ease-out, filter 0.15s ease-out, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   will-change: transform, filter;
 }
 
@@ -182,22 +183,25 @@ body {
   margin-bottom: 0;
 }
 
-/* Increasing z-index so each card stacks cleanly over the previous one */
-.project-card:nth-child(1) { z-index: 10; }
-.project-card:nth-child(2) { z-index: 20; }
-.project-card:nth-child(3) { z-index: 30; }
-.project-card:nth-child(4) { z-index: 40; }
-.project-card:nth-child(5) { z-index: 50; }
-.project-card:nth-child(6) { z-index: 60; }
-.project-card:nth-child(7) { z-index: 70; }
-.project-card:nth-child(8) { z-index: 80; }
-.project-card:nth-child(9) { z-index: 90; }
+/* Staggered sticky top offsets so previous card headers peek cleanly at top (matching reference screenshots) */
+.project-card:nth-child(1) { top: 96px; z-index: 10; }
+.project-card:nth-child(2) { top: 114px; z-index: 20; }
+.project-card:nth-child(3) { top: 132px; z-index: 30; }
+.project-card:nth-child(4) { top: 150px; z-index: 40; }
+.project-card:nth-child(5) { top: 168px; z-index: 50; }
+.project-card:nth-child(6) { top: 186px; z-index: 60; }
 
-@media (max-width: 639px) {
+@media (max-width: 768px) {
   .project-card {
-    top: 85px !important;
-    margin-bottom: 2rem;
+    margin-bottom: 16vh;
+    border-radius: 1.25rem;
   }
+  .project-card:nth-child(1) { top: 76px; }
+  .project-card:nth-child(2) { top: 90px; }
+  .project-card:nth-child(3) { top: 104px; }
+  .project-card:nth-child(4) { top: 118px; }
+  .project-card:nth-child(5) { top: 132px; }
+  .project-card:nth-child(6) { top: 146px; }
 }
 
 /* ==================== SCROLL ENTRANCE ANIMATIONS ==================== */

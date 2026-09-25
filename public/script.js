@@ -440,13 +440,17 @@ function initContactForm() {
 }
 
 
-// ==================== 10. STACKING CARDS INITIALIZER (PURE CSS STICKY + DYNAMIC Z-INDEX) ====================
+// ==================== 10. STACKING CARDS INITIALIZER (DYNAMIC STAGGERED STICKY TABS) ====================
 function initCardStackScroll() {
   const cards = Array.from(document.querySelectorAll('.project-card')).filter(c => c.style.display !== 'none');
   if (!cards.length) return;
 
+  const isMobile = window.innerWidth < 768;
+  const baseTop = isMobile ? 76 : 96;
+  const step = isMobile ? 14 : 18;
+
   cards.forEach((card, index) => {
-    // Stacking index: subsequent cards always sit on top
+    card.style.top = `${baseTop + index * step}px`;
     card.style.zIndex = `${10 + index * 10}`;
   });
 }
