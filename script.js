@@ -359,6 +359,9 @@ function initProjectFiltering() {
           card.style.display = 'none';
         }
       });
+
+      // Refresh GSAP Card Stack triggers
+      initCardStackScroll();
     });
   });
 }
@@ -526,41 +529,55 @@ function initContactForm() {
 }
 
 
-// ==================== 10. EXACT SHERYIANS STICKY CARD STACK ON SCROLL ====================
+// ==================== 10. GSAP PINNED STACKING CARDS (EXACT SHERYIANS MECHANISM) ====================
 function initCardStackScroll() {
-  const cards = document.querySelectorAll('.project-card');
+  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Clear previous triggers if re-initialized (e.g. after filtering)
+  ScrollTrigger.getAll().forEach(t => t.kill());
+
+  const cards = Array.from(document.querySelectorAll('.project-card')).filter(c => c.style.display !== 'none');
   if (!cards.length) return;
 
-  function handleStackScroll() {
-    const headerOffset = window.innerWidth < 640 ? 85 : 100;
+  const headerOffset = window.innerWidth < 640 ? 85 : 100;
 
-    cards.forEach((card, i) => {
-      const nextCard = cards[i + 1];
+  cards.forEach((card, index) => {
+    // Stacking index: subsequent cards always sit on top
+    card.style.zIndex = 10 + index * 10;
 
-      if (nextCard && nextCard.style.display !== 'none') {
-        const nextRect = nextCard.getBoundingClientRect();
-        const diff = (headerOffset + card.offsetHeight) - nextRect.top;
-        const progress = Math.min(1, Math.max(0, diff / card.offsetHeight));
+    // Pin every card except the last card
+    if (index < cards.length - 1) {
+      ScrollTrigger.create({
+        trigger: card,
+        start: `top top+=${headerOffset}`,
+        endTrigger: '#projects-grid',
+        end: 'bottom bottom',
+        pin: true,
+        pinSpacing: false,
+        invalidateOnRefresh: true,
+      });
 
-        if (progress > 0) {
-          const scale = (1 - progress * 0.05).toFixed(3);
-          const brightness = (1 - progress * 0.25).toFixed(3);
-          card.style.transform = `scale(${scale})`;
-          card.style.filter = `brightness(${brightness})`;
-        } else {
-          card.style.transform = 'scale(1)';
-          card.style.filter = 'brightness(1)';
-        }
-      } else {
-        card.style.transform = 'scale(1)';
-        card.style.filter = 'brightness(1)';
+      // Scale down card slightly and dim as the next card scrolls over it
+      const nextCard = cards[index + 1];
+      if (nextCard) {
+        gsap.to(card, {
+          scale: 0.94,
+          filter: 'brightness(0.72)',
+          ease: 'power1.out',
+          scrollTrigger: {
+            trigger: nextCard,
+            start: `top top+=${headerOffset + 300}`,
+            end: `top top+=${headerOffset}`,
+            scrub: true,
+          }
+        });
       }
-    });
-  }
+    }
+  });
 
-  window.addEventListener('scroll', handleStackScroll, { passive: true });
-  window.addEventListener('resize', handleStackScroll, { passive: true });
-  handleStackScroll();
+  ScrollTrigger.refresh();
 }
 
 
