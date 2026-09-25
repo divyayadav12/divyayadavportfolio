@@ -46,7 +46,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="bg-[#000000] text-slate-100 font-sans antialiased relative overflow-x-clip selection:bg-white selection:text-black">
+<body class="bg-[#000000] text-slate-100 font-sans antialiased relative selection:bg-white selection:text-black">
 
   <!-- Interactive Mouse Spotlight Glow -->
   <div id="cursor-spotlight" class="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300"></div>
@@ -700,8 +700,8 @@
           </button>
         </div>
 
-        <!-- Projects Horizontal Cards Container (Aada / Row Layout) -->
-        <div class="space-y-8 sm:space-y-10" id="projects-grid">
+        <!-- Projects Horizontal Cards Container (Sheryians Sticky Overlapping Stack) -->
+        <div class="relative max-w-6xl mx-auto flex flex-col" id="projects-grid">
           
           <!-- PROJECT 01: MARKETING CREATOR MARKETPLACE (LIVE) -->
           <div class="project-card group relative bg-[#0a0a0a] rounded-3xl border border-white/15 overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 p-6 sm:p-8 items-center transition-all duration-500 hover:border-emerald-500/40 shadow-2xl" data-category="live featured saas">

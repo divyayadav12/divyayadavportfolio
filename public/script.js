@@ -350,13 +350,10 @@ function initProjectFiltering() {
 
       const filter = btn.getAttribute('data-filter');
 
-      projectCards.forEach((card, index) => {
+      projectCards.forEach((card) => {
         const category = card.getAttribute('data-category') || '';
         if (filter === 'all' || category.includes(filter)) {
           card.style.display = 'grid';
-          setTimeout(() => {
-            card.classList.add('is-revealed');
-          }, index * 40);
         } else {
           card.style.display = 'none';
         }
