@@ -285,51 +285,107 @@
     </section>
 
 
-    <!-- ==================== 13. STATS NUMBERS (Static Grid) ==================== -->
-    <section class="py-10 border-y border-white/[0.08] relative z-10 bg-[#050505]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-          
-          <div class="p-5 rounded-2xl bg-[#0a0a0a] border border-white/10 hover:border-white/25 transition-all text-center group">
-            <div class="flex items-center justify-center gap-3">
-              <span class="text-slate-400 text-lg font-mono">&lt;/&gt;</span>
-              <div class="text-left">
-                <div class="text-2xl sm:text-3xl font-extrabold text-white font-mono">1+ Year</div>
-                <div class="text-xs text-slate-400">Professional Experience</div>
-              </div>
+    <!-- ==================== 13. STATS NUMBERS (Infinite Running Marquee) ==================== -->
+    <section class="py-8 border-y border-white/[0.08] relative z-10 bg-[#050505] overflow-hidden">
+      <div class="marquee-container">
+        <div class="marquee-track">
+          <!-- Set 1 -->
+          <div class="stats-card flex items-center gap-3.5">
+            <span class="w-10 h-10 rounded-xl bg-white/[0.06] border border-white/10 flex items-center justify-center text-slate-300 text-sm font-mono">&lt;/&gt;</span>
+            <div class="text-left">
+              <div class="text-2xl font-extrabold text-white font-mono">1+ Year</div>
+              <div class="text-xs text-slate-400">Professional Experience</div>
             </div>
           </div>
 
-          <div class="p-5 rounded-2xl bg-[#0a0a0a] border border-white/10 hover:border-white/25 transition-all text-center group">
-            <div class="flex items-center justify-center gap-3">
-              <span class="text-slate-400 text-lg">💼</span>
-              <div class="text-left">
-                <div class="text-2xl sm:text-3xl font-extrabold text-white font-mono">9+ Projects</div>
-                <div class="text-xs text-slate-400">Built & Deployed</div>
-              </div>
+          <div class="stats-card flex items-center gap-3.5">
+            <span class="w-10 h-10 rounded-xl bg-white/[0.06] border border-white/10 flex items-center justify-center text-lg">💼</span>
+            <div class="text-left">
+              <div class="text-2xl font-extrabold text-white font-mono">6+ Projects</div>
+              <div class="text-xs text-slate-400">Built & Deployed</div>
             </div>
           </div>
 
-          <div class="p-5 rounded-2xl bg-[#0a0a0a] border border-white/10 hover:border-white/25 transition-all text-center group">
-            <div class="flex items-center justify-center gap-3">
-              <span class="text-slate-400 text-lg">🚀</span>
-              <div class="text-left">
-                <div class="text-2xl sm:text-3xl font-extrabold text-white font-mono">15+ Tech</div>
-                <div class="text-xs text-slate-400">Core Technologies</div>
-              </div>
+          <div class="stats-card flex items-center gap-3.5">
+            <span class="w-10 h-10 rounded-xl bg-white/[0.06] border border-white/10 flex items-center justify-center text-lg">🚀</span>
+            <div class="text-left">
+              <div class="text-2xl font-extrabold text-white font-mono">15+ Tech</div>
+              <div class="text-xs text-slate-400">Core Technologies</div>
             </div>
           </div>
 
-          <div class="p-5 rounded-2xl bg-[#0a0a0a] border border-white/10 hover:border-white/25 transition-all text-center group">
-            <div class="flex items-center justify-center gap-3">
-              <span class="text-emerald-400 text-lg">⚡</span>
-              <div class="text-left">
-                <div class="text-2xl sm:text-3xl font-extrabold text-white font-mono">100%</div>
-                <div class="text-xs text-slate-400">Hands-On Development</div>
-              </div>
+          <div class="stats-card flex items-center gap-3.5">
+            <span class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-lg text-emerald-400">⚡</span>
+            <div class="text-left">
+              <div class="text-2xl font-extrabold text-white font-mono">100%</div>
+              <div class="text-xs text-slate-400">Hands-On Development</div>
             </div>
           </div>
 
+          <div class="stats-card flex items-center gap-3.5">
+            <span class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-sm font-bold text-emerald-400">🟢</span>
+            <div class="text-left">
+              <div class="text-2xl font-extrabold text-emerald-400 font-mono">4 Live Apps</div>
+              <div class="text-xs text-slate-400">Vercel Production</div>
+            </div>
+          </div>
+
+          <div class="stats-card flex items-center gap-3.5">
+            <span class="w-10 h-10 rounded-xl bg-white/[0.06] border border-white/10 flex items-center justify-center text-lg">🏢</span>
+            <div class="text-left">
+              <div class="text-2xl font-extrabold text-white font-mono">FAST HRM</div>
+              <div class="text-xs text-slate-400">Office Operations</div>
+            </div>
+          </div>
+
+          <!-- Set 2 (Duplicate for Seamless Loop) -->
+          <div class="stats-card flex items-center gap-3.5">
+            <span class="w-10 h-10 rounded-xl bg-white/[0.06] border border-white/10 flex items-center justify-center text-slate-300 text-sm font-mono">&lt;/&gt;</span>
+            <div class="text-left">
+              <div class="text-2xl font-extrabold text-white font-mono">1+ Year</div>
+              <div class="text-xs text-slate-400">Professional Experience</div>
+            </div>
+          </div>
+
+          <div class="stats-card flex items-center gap-3.5">
+            <span class="w-10 h-10 rounded-xl bg-white/[0.06] border border-white/10 flex items-center justify-center text-lg">💼</span>
+            <div class="text-left">
+              <div class="text-2xl font-extrabold text-white font-mono">6+ Projects</div>
+              <div class="text-xs text-slate-400">Built & Deployed</div>
+            </div>
+          </div>
+
+          <div class="stats-card flex items-center gap-3.5">
+            <span class="w-10 h-10 rounded-xl bg-white/[0.06] border border-white/10 flex items-center justify-center text-lg">🚀</span>
+            <div class="text-left">
+              <div class="text-2xl font-extrabold text-white font-mono">15+ Tech</div>
+              <div class="text-xs text-slate-400">Core Technologies</div>
+            </div>
+          </div>
+
+          <div class="stats-card flex items-center gap-3.5">
+            <span class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-lg text-emerald-400">⚡</span>
+            <div class="text-left">
+              <div class="text-2xl font-extrabold text-white font-mono">100%</div>
+              <div class="text-xs text-slate-400">Hands-On Development</div>
+            </div>
+          </div>
+
+          <div class="stats-card flex items-center gap-3.5">
+            <span class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-sm font-bold text-emerald-400">🟢</span>
+            <div class="text-left">
+              <div class="text-2xl font-extrabold text-emerald-400 font-mono">4 Live Apps</div>
+              <div class="text-xs text-slate-400">Vercel Production</div>
+            </div>
+          </div>
+
+          <div class="stats-card flex items-center gap-3.5">
+            <span class="w-10 h-10 rounded-xl bg-white/[0.06] border border-white/10 flex items-center justify-center text-lg">🏢</span>
+            <div class="text-left">
+              <div class="text-2xl font-extrabold text-white font-mono">FAST HRM</div>
+              <div class="text-xs text-slate-400">Office Operations</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -613,7 +669,7 @@
         <!-- Filter Tab Buttons (Matching Dark Pill Aesthetic) -->
         <div class="flex flex-wrap items-center justify-center gap-2 mb-12 reveal-on-scroll">
           <button class="project-filter-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-white text-black shadow-lg" data-filter="all">
-            All Projects (9)
+            All Projects (6)
           </button>
           <button class="project-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-[#151821] text-slate-300 hover:text-white border border-white/[0.08]" data-filter="live">
             🟢 Live Deployed Apps (4)
@@ -1166,107 +1222,7 @@
             </div>
           </div>
 
-          <!-- PROJECT 06: FAST CAREER -->
-          <div class="project-card group relative bg-[#0a0a0a] rounded-3xl border border-white/15 overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 p-6 sm:p-8 items-center transition-all duration-500 hover:border-white/30 shadow-2xl" data-category="featured saas">
-            
-            <div class="lg:col-span-5 flex flex-col justify-center">
-              <div class="w-full h-56 sm:h-64 rounded-2xl overflow-hidden bg-[#080808] border border-white/10 flex flex-col group-hover:border-white/25 transition-all shadow-inner">
-                <div class="h-8 px-3.5 bg-[#141414] border-b border-white/10 flex items-center justify-between shrink-0">
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
-                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
-                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
-                  </div>
-                  <span class="text-[11px] font-mono text-slate-400 bg-black/40 px-2.5 py-0.5 rounded">careers.fast.corporate</span>
-                  <span class="w-3 h-3 text-slate-500">🔒</span>
-                </div>
-                <div class="p-4 flex-1 flex flex-col justify-between bg-gradient-to-br from-[#0f0f0f] to-[#080808] text-left">
-                  <div class="flex items-center justify-between">
-                    <span class="text-xs font-bold text-white">FAST Recruitment ATS</span>
-                    <span class="text-[10px] px-2.5 py-0.5 rounded bg-white/10 text-white font-mono">14 Openings</span>
-                  </div>
-                  <div class="grid grid-cols-2 gap-2.5 my-2">
-                    <div class="p-2.5 rounded-xl bg-white/[0.04] border border-white/5">
-                      <div class="text-[9px] text-slate-400">Resume Parser</div>
-                      <div class="text-sm font-bold text-white">Auto Extracted</div>
-                    </div>
-                    <div class="p-2.5 rounded-xl bg-white/[0.04] border border-white/5">
-                      <div class="text-[9px] text-slate-400">Online Test</div>
-                      <div class="text-sm font-bold text-emerald-400">Timed Engine</div>
-                    </div>
-                  </div>
-                  <div class="flex items-center justify-between text-[10px] text-slate-400 border-t border-white/5 pt-2">
-                    <span>Candidate Evaluation Board</span>
-                    <span class="text-zinc-300 font-mono font-semibold">React + Node</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="lg:col-span-7 flex flex-col justify-between h-full space-y-4 text-left">
-              <div>
-                <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                  <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/20">
-                    RECRUITMENT PLATFORM
-                  </span>
-                  <span class="text-xs font-mono font-semibold text-slate-400">PROJECT 06</span>
-                </div>
-
-                <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
-                  FAST Career Website — Recruitment Management Platform
-                </h3>
-                <p class="text-xs sm:text-sm font-semibold text-slate-300 mt-0.5">
-                  Job Listings, Candidate Applications & Automated Assessment Pipelines
-                </p>
-
-                <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
-                  Dual-facing recruitment platform combining a public career portal with an administrative candidate tracking system (ATS), multi-step registration forms, resume parsing, and online testing.
-                </p>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3 text-xs text-slate-300">
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Dynamic Job Listings by Department & Location</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Resume Intake & Automated Data Parsing</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Integrated Candidate Online Assessment Test</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Admin Candidate Evaluation & Scoring Board</span>
-                  </div>
-                </div>
-
-                <div class="mt-3 p-2 rounded-xl bg-[#141414] border border-white/10 text-[11px] text-slate-200 flex items-center gap-2">
-                  <i data-lucide="rocket" class="w-3.5 h-3.5 shrink-0 text-emerald-400"></i>
-                  <span><strong>Role:</strong> Full Stack Developer (API & Live Deployment)</span>
-                </div>
-              </div>
-
-              <div class="pt-3 border-t border-white/[0.08] space-y-3">
-                <div class="flex flex-wrap items-center gap-1.5">
-                  <span class="text-slate-400 text-xs font-semibold mr-1">Stack:</span>
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-[#111111] border border-white/10 text-slate-300">React.js</span>
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-[#111111] border border-white/10 text-slate-300">TypeScript</span>
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-[#111111] border border-white/10 text-slate-300">Node.js</span>
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-[#111111] border border-white/10 text-slate-300">MongoDB</span>
-                </div>
-
-                <button class="open-modal-btn w-full sm:w-auto px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-white bg-[#141414] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-2 transition-all" data-project-index="5">
-                  <i data-lucide="eye" class="w-4 h-4"></i>
-                  <span>View Full Architecture & Details</span>
-                </button>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- PROJECT 07: PROPETER SAAS -->
+          <!-- PROJECT 06: PROPETER SAAS -->
           <div class="project-card group relative bg-[#0a0a0a] rounded-3xl border border-white/15 overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 p-6 sm:p-8 items-center transition-all duration-500 hover:border-white/30 shadow-2xl" data-category="featured saas">
             
             <div class="lg:col-span-5 flex flex-col justify-center">
@@ -1309,7 +1265,7 @@
                   <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/20">
                     ENTERPRISE SAAS
                   </span>
-                  <span class="text-xs font-mono font-semibold text-slate-400">PROJECT 07</span>
+                  <span class="text-xs font-mono font-semibold text-slate-400">PROJECT 06</span>
                 </div>
 
                 <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
@@ -1357,208 +1313,7 @@
                   <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-[#111111] border border-white/10 text-slate-300">PostgreSQL</span>
                 </div>
 
-                <button class="open-modal-btn w-full sm:w-auto px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-white bg-[#141414] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-2 transition-all" data-project-index="6">
-                  <i data-lucide="eye" class="w-4 h-4"></i>
-                  <span>View Full Architecture & Details</span>
-                </button>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- PROJECT 08: XERO INTEGRATION -->
-          <div class="project-card group relative bg-[#0a0a0a] rounded-3xl border border-white/15 overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 p-6 sm:p-8 items-center transition-all duration-500 hover:border-white/30 shadow-2xl" data-category="featured realtime">
-            
-            <div class="lg:col-span-5 flex flex-col justify-center">
-              <div class="w-full h-56 sm:h-64 rounded-2xl overflow-hidden bg-[#080808] border border-white/10 flex flex-col group-hover:border-white/25 transition-all shadow-inner">
-                <div class="h-8 px-3.5 bg-[#141414] border-b border-white/10 flex items-center justify-between shrink-0">
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
-                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
-                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
-                  </div>
-                  <span class="text-[11px] font-mono text-slate-400 bg-black/40 px-2.5 py-0.5 rounded">api.xero.webhook-sync</span>
-                  <span class="w-3 h-3 text-slate-500">⚡</span>
-                </div>
-                <div class="p-4 flex-1 flex flex-col justify-between bg-gradient-to-br from-[#0f0f0f] to-[#080808] text-left">
-                  <div class="flex items-center justify-between">
-                    <span class="text-xs font-bold text-white">Xero Automated Sync</span>
-                    <span class="text-[10px] px-2.5 py-0.5 rounded bg-emerald-500/15 text-emerald-400 font-mono">OAuth 2.0</span>
-                  </div>
-                  <div class="grid grid-cols-2 gap-2.5 my-2">
-                    <div class="p-2.5 rounded-xl bg-white/[0.04] border border-white/5">
-                      <div class="text-[9px] text-slate-400">Webhook Event</div>
-                      <div class="text-sm font-bold text-emerald-400">INVOICE.PAID</div>
-                    </div>
-                    <div class="p-2.5 rounded-xl bg-white/[0.04] border border-white/5">
-                      <div class="text-[9px] text-slate-400">Ledger Sync</div>
-                      <div class="text-sm font-bold text-white">Auto Reconciled</div>
-                    </div>
-                  </div>
-                  <div class="flex items-center justify-between text-[10px] text-slate-400 border-t border-white/5 pt-2">
-                    <span>Cryptographic Signature Check</span>
-                    <span class="text-emerald-400 font-mono font-semibold">Node.js API</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="lg:col-span-7 flex flex-col justify-between h-full space-y-4 text-left">
-              <div>
-                <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                  <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/20">
-                    FINANCIAL API INTEGRATION
-                  </span>
-                  <span class="text-xs font-mono font-semibold text-slate-400">PROJECT 08</span>
-                </div>
-
-                <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
-                  Xero Accounting & Webhook Integration Engine
-                </h3>
-                <p class="text-xs sm:text-sm font-semibold text-slate-300 mt-0.5">
-                  Automated Invoice Generation, Payment Tracking & Webhook Sync
-                </p>
-
-                <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
-                  Enterprise integration module connecting business applications with Xero cloud accounting, automating invoice generation, invoice status tracking, and processing real-time webhook events.
-                </p>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3 text-xs text-slate-300">
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                    <span>OAuth 2.0 Flow with Automatic Token Refresh</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                    <span>Automated Invoice & PDF Generation</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                    <span>Cryptographic Signature Verification on Webhooks</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
-                    <span>Background Retry & Sync Reconciliation</span>
-                  </div>
-                </div>
-
-                <div class="mt-3 p-2 rounded-xl bg-[#141414] border border-white/10 text-[11px] text-slate-200 flex items-center gap-2">
-                  <i data-lucide="check-check" class="w-3.5 h-3.5 shrink-0 text-emerald-400"></i>
-                  <span><strong>Documented on Resume:</strong> Xero & Webhook Engineering</span>
-                </div>
-              </div>
-
-              <div class="pt-3 border-t border-white/[0.08] space-y-3">
-                <div class="flex flex-wrap items-center gap-1.5">
-                  <span class="text-slate-400 text-xs font-semibold mr-1">Stack:</span>
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-[#111111] border border-white/10 text-slate-300">Node.js</span>
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-[#111111] border border-white/10 text-slate-300">React.js</span>
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-[#111111] border border-white/10 text-slate-300">TypeScript</span>
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-[#111111] border border-white/10 text-slate-300">Xero API</span>
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-[#111111] border border-white/10 text-slate-300">Webhooks</span>
-                </div>
-
-                <button class="open-modal-btn w-full sm:w-auto px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-white bg-[#141414] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-2 transition-all" data-project-index="7">
-                  <i data-lucide="eye" class="w-4 h-4"></i>
-                  <span>View Full Architecture & Details</span>
-                </button>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- PROJECT 09: WORKPULSE -->
-          <div class="project-card group relative bg-[#0a0a0a] rounded-3xl border border-white/15 overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 p-6 sm:p-8 items-center transition-all duration-500 hover:border-white/30 shadow-2xl" data-category="saas realtime">
-            
-            <div class="lg:col-span-5 flex flex-col justify-center">
-              <div class="w-full h-56 sm:h-64 rounded-2xl overflow-hidden bg-[#080808] border border-white/10 flex flex-col group-hover:border-white/25 transition-all shadow-inner">
-                <div class="h-8 px-3.5 bg-[#141414] border-b border-white/10 flex items-center justify-between shrink-0">
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></span>
-                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
-                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
-                  </div>
-                  <span class="text-[11px] font-mono text-slate-400 bg-black/40 px-2.5 py-0.5 rounded">workpulse.dashboard.io</span>
-                  <span class="w-3 h-3 text-emerald-400 font-bold text-xs">🟢</span>
-                </div>
-                <div class="p-4 flex-1 flex flex-col justify-between bg-gradient-to-br from-[#0f0f0f] to-[#080808] text-left">
-                  <div class="flex items-center justify-between">
-                    <span class="text-xs font-bold text-white">WorkPulse Analytics</span>
-                    <span class="text-[10px] px-2.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-mono font-semibold">Live Broadcast</span>
-                  </div>
-                  <div class="grid grid-cols-2 gap-2.5 my-2">
-                    <div class="p-2.5 rounded-xl bg-white/[0.04] border border-white/5">
-                      <div class="text-[9px] text-slate-400">Sprint Velocity</div>
-                      <div class="text-sm font-bold text-emerald-400">92% On Track</div>
-                    </div>
-                    <div class="p-2.5 rounded-xl bg-white/[0.04] border border-white/5">
-                      <div class="text-[9px] text-slate-400">Socket Channels</div>
-                      <div class="text-sm font-bold text-white">Connected (Live)</div>
-                    </div>
-                  </div>
-                  <div class="flex items-center justify-between text-[10px] text-slate-400 border-t border-white/5 pt-2">
-                    <span>Recharts Data Visualizer</span>
-                    <span class="text-purple-400 font-mono font-semibold">Socket.IO + Redux</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="lg:col-span-7 flex flex-col justify-between h-full space-y-4 text-left">
-              <div>
-                <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                  <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-white border border-white/20">
-                    PRODUCTIVITY & ANALYTICS
-                  </span>
-                  <span class="text-xs font-mono font-semibold text-slate-400">PROJECT 09</span>
-                </div>
-
-                <h3 class="text-xl sm:text-2xl font-extrabold text-white group-hover:text-slate-200 transition-colors">
-                  WorkPulse — Staff Work Tracking & Live Project Management
-                </h3>
-                <p class="text-xs sm:text-sm font-semibold text-slate-300 mt-0.5">
-                  Real-Time Project Status, Activity History & Managerial Dashboards
-                </p>
-
-                <p class="text-xs sm:text-sm text-slate-300 mt-2.5 leading-relaxed">
-                  A staff productivity and real-time project status management platform where employees broadcast active work items and managers monitor live project health with visual Recharts metrics.
-                </p>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3 text-xs text-slate-300">
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Manager and Employee Dashboards with RBAC</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Live Task Updates & Automatic Activity Timestamps</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Socket.IO Real-Time Work Status Broadcast</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <i data-lucide="check" class="w-3.5 h-3.5 text-slate-300 shrink-0"></i>
-                    <span>Visual Productivity Charts via Recharts</span>
-                  </div>
-                </div>
-
-                <div class="mt-3 p-2 rounded-xl bg-[#141414] border border-white/10 text-[11px] text-slate-200 flex items-center gap-2">
-                  <i data-lucide="activity" class="w-3.5 h-3.5 shrink-0 text-purple-400"></i>
-                  <span><strong>Real-Time:</strong> Live Socket Channels & Analytics</span>
-                </div>
-              </div>
-
-              <div class="pt-3 border-t border-white/[0.08] space-y-3">
-                <div class="flex flex-wrap items-center gap-1.5">
-                  <span class="text-slate-400 text-xs font-semibold mr-1">Stack:</span>
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-[#111111] border border-white/10 text-slate-300">React.js</span>
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-[#111111] border border-white/10 text-slate-300">TypeScript</span>
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-[#111111] border border-white/10 text-slate-300">Socket.IO</span>
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-[#111111] border border-white/10 text-slate-300">Recharts</span>
-                </div>
-
-                <button class="open-modal-btn w-full sm:w-auto px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-white bg-[#141414] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-2 transition-all" data-project-index="8">
+                <button class="open-modal-btn w-full sm:w-auto px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-white bg-[#141414] hover:bg-[#222733] border border-white/15 flex items-center justify-center gap-2 transition-all" data-project-index="5">
                   <i data-lucide="eye" class="w-4 h-4"></i>
                   <span>View Full Architecture & Details</span>
                 </button>

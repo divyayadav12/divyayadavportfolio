@@ -107,27 +107,6 @@ const projectsData = [
     architecture: "Frontend built with React.js & TypeScript consuming REST APIs. Backend powered by Node.js/Express with MongoDB data persistence, JWT validation, and RBAC middleware."
   },
   {
-    id: "fast-career",
-    title: "FAST Career Website — Recruitment Management Platform",
-    badge: "Recruitment & Candidate Assessment",
-    subtitle: "Job Listing, Candidate Applications & Automated Resume Pipelines",
-    role: "Full Stack Developer (FAST)",
-    period: "2026 – Present",
-    liveUrl: null,
-    tech: ["React.js", "TypeScript", "Node.js", "Express.js", "MongoDB", "REST APIs"],
-    impact: "Streamlines end-to-end recruitment, automated candidate filtering, and online test assessments for corporate hiring.",
-    description: "A dual-facing recruitment platform combining a modern public-facing career portal with an administrative candidate tracking system (ATS) and built-in skill assessment testing engine.",
-    features: [
-      "Dynamic job listings with filtering by department, experience level, and location",
-      "Multi-step candidate registration, experienced candidate form & portfolio intake",
-      "Resume upload with automated parsing & data extraction pipeline",
-      "Integrated candidate online assessment test with automated answer recording",
-      "Admin candidate management board with evaluation scoring and status updates",
-      "Protected admin routes & candidate review workflows"
-    ],
-    architecture: "React + TypeScript frontend integrated with Express.js REST APIs for multipart resume uploads, test timer synchronization, and MongoDB assessment schemas."
-  },
-  {
     id: "propeter-saas",
     title: "Propeter — Property Management SaaS Platform",
     badge: "Enterprise SaaS & Multi-Tier Access",
@@ -146,46 +125,6 @@ const projectsData = [
       "Property listings, unit tenant assignments, and operational maintenance logs"
     ],
     architecture: "Single Page Application (SPA) in React & TypeScript with PostgreSQL relational backend, connection pooling, and Nginx production deployment."
-  },
-  {
-    id: "xero-integration",
-    title: "Xero Accounting & Webhook Integration Engine",
-    badge: "Financial API & Real-Time Sync",
-    subtitle: "Automated Invoice Generation, Payment Tracking & Webhook Listeners",
-    role: "Full Stack Developer (Ideas2Goal Technologies)",
-    period: "Sep 2025 – Apr 2026",
-    liveUrl: null,
-    tech: ["Node.js", "React.js", "TypeScript", "Xero API", "Webhooks", "REST APIs"],
-    impact: "Automated recurring billing cycles and synchronized real-time payment reconciliation between SaaS and Xero ledger.",
-    description: "An enterprise integration module connecting business applications with Xero cloud accounting, automating invoice generation, invoice status tracking, and processing real-time webhook events.",
-    features: [
-      "OAuth 2.0 authentication flow with automatic token refreshing",
-      "Automated invoice creation and PDF generation via Xero REST endpoints",
-      "Secure webhook listener endpoints verifying cryptographic signatures",
-      "Real-time event processing for paid, voided, or overdue invoices",
-      "Resilient error handling and background retry synchronization"
-    ],
-    architecture: "Node.js webhook consumer microservice handling Xero signature validation, dispatching status updates to application databases."
-  },
-  {
-    id: "workpulse",
-    title: "WorkPulse — Staff Work Tracking & Live Project Management",
-    badge: "Staff Productivity & Analytics",
-    subtitle: "Real-Time Project Status, Activity History & Managerial Dashboards",
-    role: "Full Stack Developer",
-    period: "Productivity Platform",
-    liveUrl: null,
-    tech: ["React.js", "TypeScript", "Node.js", "MongoDB", "Socket.IO", "JWT", "Recharts"],
-    impact: "Increases team transparency and eliminates manual status report meetings for project teams.",
-    description: "A staff productivity and real-time project status management platform where employees broadcast their active work items and managers monitor live project health and productivity metrics.",
-    features: [
-      "Manager and employee dashboards with distinct permissions",
-      "Live task updates and automatic activity log timestamps",
-      "Socket.IO real-time work status broadcast to all connected managers",
-      "Visual productivity charts and sprint completion graphs via Recharts",
-      "JWT authentication and automated daily report generation"
-    ],
-    architecture: "Node.js backend with Socket.IO room subscriptions, connected to React client with Recharts visualizer and Redux Toolkit store."
   }
 ];
 
